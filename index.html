@@ -7,13 +7,7 @@
     <body>
         <h1>World Editor</h1>
         <canvas id="world"></canvas>
-        <div id="controls">
-            <button onclick="addRandomPoint()">Add Point</button>
-            <button onclick="addRandomSegment()">Add Segment</button>
-            <button onclick="removeRandomSegment()">Remove Segment</button>
-            <button onclick="removeRandomPoint()">Remove Point</button>
-            <button onclick="removeAll()">Remove All</button>
-        </div>
+        <div id="controls"></div>
 
         <script src="js/math/graph.js"></script>
         <script src="js/primitives/point.js"></script>
@@ -21,62 +15,6 @@
         <script>
             const canvasWidth = 600;
             const canvasHeight = 600;
-
-            function removeAll() {
-                graph.dispose();
-
-                ctx.clearRect(0, 0, world.width, world.height);
-                graph.draw(ctx);
-            }
-
-            function removeRandomPoint() {
-                const pI = Math.floor(Math.random() * graph.points.length);
-
-                const point = graph.points.splice(pI,1)[0];
-                const segments = graph.getSegmentsWithPoint(point);
-                segments.forEach(s => graph.removeSegment(s));
-
-                ctx.clearRect(0, 0, world.width, world.height);
-                graph.draw(ctx);
-            }
-
-            function removeRandomSegment() {
-                const sI = Math.floor(Math.random() * graph.segments.length);
-
-                graph.segments.splice(sI,1);
-                ctx.clearRect(0, 0, world.width, world.height);
-                graph.draw(ctx);
-            }
-
-            function addRandomSegment() {
-                const pI1 = Math.floor(Math.random() * graph.points.length);
-                const pI2 = Math.floor(Math.random() * graph.points.length);
-
-                const success = graph.tryAddSegment(
-                    new Segment(
-                        graph.points[pI1],
-                        graph.points[pI2]
-                    )
-                );
-                if(!success){
-                    return;
-                }
-
-                ctx.clearRect(0, 0, world.width, world.height);
-                graph.draw(ctx);
-            }
-
-            function addRandomPoint(){
-                const point = new Point(Math.floor(Math.random()*world.width), Math.floor(Math.random()*world.height));
-                
-                const success = graph.tryAddPoint(point);
-                if(!success){
-                    return;
-                }
-
-                ctx.clearRect(0, 0, world.width, world.height);
-                graph.draw(ctx);
-            }
 
             world.width = canvasWidth;
             world.height = canvasHeight;
