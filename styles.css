@@ -8,6 +8,6 @@ h1 {
     font-family: Arial;
 }
 
-canvas#world {
+canvas#worldCanvas {
     background-color: green;
 }

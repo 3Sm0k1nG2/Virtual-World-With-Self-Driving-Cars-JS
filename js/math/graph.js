@@ -1,6 +1,8 @@
+import Point from "../primitives/point.js";
+import Segment from "../primitives/segment.js";
+
 class Graph {
     /**
-     * 
      * @param {Point[]} points 
      * @param {Segment[]} segments 
      */
@@ -31,6 +33,11 @@ class Graph {
         this.addPoint(point) ;
 
         return true;
+    }
+
+    removePoint(point) {
+        this.getSegmentsWithPoint(point).forEach(s => this.removeSegment(s));
+        this.points.splice(this.points.indexOf(point), 1);
     }
 
     /** @param {Segment} seg */
@@ -67,7 +74,7 @@ class Graph {
 
     /** @param {Point} point*/
     getSegmentsWithPoint(point){
-        return graph.segments.filter(s => s.includes(point))
+        return this.segments.filter(s => s.includes(point))
     }
 
     dispose() {
@@ -86,3 +93,5 @@ class Graph {
         }
     }
 }
+
+export default Graph;

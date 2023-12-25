@@ -1,6 +1,7 @@
+import DrawParams from "./drawParams.js";
+
 class Segment {
     /**
-     * 
      * @param {Point} p1 
      * @param {Point} p2
      */
@@ -15,22 +16,25 @@ class Segment {
     }
 
     /** @param {Point} point*/
-    includes(point){
+    includes(point) {
         return this.p1.equals(point) || this.p2.equals(point);
     }
 
     /**
      * 
      * @param {CanvasRenderingContext2D} ctx 
-     * @param {number} width 
-     * @param {CSSStyleDeclaration.color} color 
+     * @param {DrawParams} drawParams
      */
-    draw(ctx, width = 2, color = "black"){
+    draw(ctx, { size = 2, color = "black", dash = [] } = {}) {
         ctx.beginPath();
-        ctx.lineWidth = width;
+        ctx.lineWidth = size;
         ctx.strokeStyle = color;
+        ctx.setLineDash(dash);
         ctx.moveTo(this.p1.x, this.p1.y);
         ctx.lineTo(this.p2.x, this.p2.y);
         ctx.stroke();
+        ctx.setLineDash([]);
     }
 }
+
+export default Segment;
