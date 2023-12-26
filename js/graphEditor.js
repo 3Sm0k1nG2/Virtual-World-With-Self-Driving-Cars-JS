@@ -1,15 +1,18 @@
 import Point from "./primitives/point.js";
 import Segment from "./primitives/segment.js";
+import Viewport from "./viewport.js";
 import Graph from "./math/graph.js";
 import { getNearestPoint } from "./math/utils.js";
+import { MOUSE_LEFT_BUTTON, MOUSE_MIDDLE_BUTTON, MOUSE_RIGHT_BUTTON } from "./consts.js";
 
 class GraphEditor {
     /**
-     * @param {HTMLCanvasElement} canvas 
+     * @param {Viewport} viewport 
      * @param {Graph} graph 
      */
-    constructor(canvas, graph){
-        this.canvas = canvas;
+    constructor(viewport, graph){
+        this.viewport = viewport;
+        this.canvas = viewport.canvas;
         this.graph = graph;
 
         this.ctx = this.canvas.getContext("2d");
@@ -33,40 +36,43 @@ class GraphEditor {
 
     /** @param {MouseEvent} e */
     #handleMouseDown(e){
-        if(e.button == 2){ // right click
-            if(this.selected){
-                this.selected = null;
-                return;
-            }
+        switch(e.button) {
+            case MOUSE_RIGHT_BUTTON: 
+                if(this.selected){
+                    this.selected = null;
+                    return;
+                }
 
-            if(this.hovered){
-                this.#removePoint(this.hovered);
-                return;
-            }
+                if(this.hovered){
+                    this.#removePoint(this.hovered);
+                    return;
+                }
+                
+                break;
 
-            return;
-        }
+            case MOUSE_MIDDLE_BUTTON: 
 
-        if(e.button == 0) { // left click
-            if(this.hovered){
-                this.#select(this.hovered);
-                this.dragging = true;
-                return;
-            }
+                break;
 
-            this.graph.addPoint(this.mouse);
-            this.#select(this.mouse);
-            this.hovered = this.mouse;
+            case MOUSE_LEFT_BUTTON: 
+                if(this.hovered){
+                    this.#select(this.hovered);
+                    this.dragging = true;
+                    return;
+                }
 
-            return;
+                this.graph.addPoint(this.mouse);
+                this.#select(this.mouse);
+                this.hovered = this.mouse;
+            
+                break;
         }
     }
 
     /** @param {MouseEvent} e */
     #handleMouseMove(e){
-        this.mouse = new Point(e.offsetX, e.offsetY);
-
-        this.hovered = getNearestPoint(this.mouse, this.graph.points, 0.1);
+        this.mouse = this.viewport.getMouse(e, true);
+        this.hovered = getNearestPoint(this.mouse, this.graph.points, 0.1 * this.viewport.zoom);
 
         if(this.dragging){
             this.selected.x = this.mouse.x;
@@ -105,6 +111,13 @@ class GraphEditor {
             new Segment(this.selected, intent).draw(this.ctx, { dash: [3, 3]});
             this.selected.draw(this.ctx, {outline: true})
         }
+    }
+
+    dispose() {
+        this.graph.dispose();
+        
+        this.selected = null;
+        this.hovered = null;
     }
 }
 

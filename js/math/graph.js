@@ -6,31 +6,61 @@ class Graph {
      * @param {Point[]} points 
      * @param {Segment[]} segments 
      */
-    constructor(points = [], segments = []){
+    constructor(points = [], segments = []) {
         this.points = points;
         this.segments = segments;
     }
 
+    /** 
+     * @param {{
+    *   points: {
+    *       x: number, 
+    *       y: number
+    *   }[],
+    *   segments: {
+    *       p1: {
+    *           x: number,
+    *           y: number
+    *       },
+    *       p2: {
+    *           x:number,
+    *           y: number
+    *       }
+    *   }[]
+     *  }} graphData 
+     */
+    static load(graphData) {
+        const points = graphData.points
+            .map(p => new Point(p.x, p.y));
+        const segments = graphData.segments
+            .map(s => new Segment(
+                points.find(p => p.equals(s.p1)),
+                points.find(p => p.equals(s.p2))
+            ));
+
+        return new Graph(points, segments);
+    }
+
     /** @param {Point} point */
-    addPoint(point){
+    addPoint(point) {
         this.points.push(point);
         this.segments.splice()
     }
 
     /** @param {Point} point */
-    containsPoint(point){
+    containsPoint(point) {
         return this.points.find(p => p.equals(point))
             ? true
             : false;
     }
 
     /** @param {Point} point */
-    tryAddPoint(point){
-        if(this.containsPoint(point)){
+    tryAddPoint(point) {
+        if (this.containsPoint(point)) {
             return false;
         }
-        
-        this.addPoint(point) ;
+
+        this.addPoint(point);
 
         return true;
     }
@@ -41,39 +71,39 @@ class Graph {
     }
 
     /** @param {Segment} seg */
-    addSegment(seg){
+    addSegment(seg) {
         this.segments.push(seg);
     }
 
     /** @param {Segment} seg */
-    containsSegment(seg){
+    containsSegment(seg) {
         return this.segments.find(s => s.equals(seg))
             ? true
             : false;
     }
 
     /** @param {Segment} seg */
-    tryAddSegment(seg){
-        if(this.containsSegment(seg)){
+    tryAddSegment(seg) {
+        if (this.containsSegment(seg)) {
             return false;
         }
 
-        if(seg.p1.equals(seg.p2)){
+        if (seg.p1.equals(seg.p2)) {
             return false;
         }
-        
-        this.addSegment(seg) ;
+
+        this.addSegment(seg);
 
         return true;
     }
 
     /** @param {Segment} seg */
-    removeSegment(seg){
+    removeSegment(seg) {
         this.segments.splice(this.segments.indexOf(seg), 1);
     }
 
     /** @param {Point} point*/
-    getSegmentsWithPoint(point){
+    getSegmentsWithPoint(point) {
         return this.segments.filter(s => s.includes(point))
     }
 
@@ -83,12 +113,12 @@ class Graph {
     }
 
     /** @param {CanvasRenderingContext2D} ctx */
-    draw(ctx){
-        for(const seg of this.segments){
-           seg.draw(ctx);
+    draw(ctx) {
+        for (const seg of this.segments) {
+            seg.draw(ctx);
         }
 
-        for(const point of this.points){
+        for (const point of this.points) {
             point.draw(ctx);
         }
     }

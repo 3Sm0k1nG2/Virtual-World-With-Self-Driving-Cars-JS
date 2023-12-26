@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>World Editor</title>
-        <link rel="stylesheet" href="./styles.css">
-    </head>
-    <body>
-        <h1>World Editor</h1>
-        <canvas id="worldCanvas"></canvas>
-        <div id="controls"></div>
 
-        <script src="main.js" type="module"></script>
-    </body>
+<head>
+    <title>World Editor</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <h1>World Editor</h1>
+    <canvas id="world"></canvas>
+    <div id="controls">
+        <button onclick="dispose()">Trash</button>
+        <button onclick="save()">Save</button>
+        <button onclick="load()">Load</button>
+    </div>
+
+    <script src="main.js" type="module"></script>
+</body>
+
 </html>
