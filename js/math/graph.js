@@ -1,3 +1,4 @@
+import DrawParams from "../primitives/drawParams.js";
 import Point from "../primitives/point.js";
 import Segment from "../primitives/segment.js";
 
@@ -112,14 +113,21 @@ class Graph {
         this.segments.length = 0;
     }
 
-    /** @param {CanvasRenderingContext2D} ctx */
-    draw(ctx) {
+    hash() {
+        return JSON.stringify(this);
+    }
+
+    /** 
+     * @param {CanvasRenderingContext2D} ctx 
+     * @param {DrawParams} drawOptions
+     */
+    draw(ctx, drawOptions) {
         for (const seg of this.segments) {
-            seg.draw(ctx);
+            seg.draw(ctx, drawOptions);
         }
 
         for (const point of this.points) {
-            point.draw(ctx);
+            point.draw(ctx, drawOptions);
         }
     }
 }

@@ -26,7 +26,7 @@ export function getNearestPoint(loc, points, threshold = Number.MAX_SAFE_INTEGER
  * @param {Point} p1 
  * @param {Point} p2 
  */
-function distance(p1, p2){
+export function distance(p1, p2){
     return Math.hypot(p1.x - p2.x, p1.y - p2.y);
 }
 
@@ -56,10 +56,28 @@ export function average(p1, p2) {
 
 /**
  * @param {Point} p1 
+ * @param {Point} p2 
+ */
+export function dot(p1, p2) {
+    return p1.x * p2.x + p1.y * p2.y;
+}
+
+/**
+ * @param {Point} p1 
  * @param {number} scaler
  */
 export function scale(p, scaler){
     return new Point(p.x * scaler, p.y * scaler);
+}
+
+/** @param {Point} p */
+export function normalize(p) {
+    return scale(p, 1 / magnitude(p));
+}
+
+/** @param {Point} p */
+export function magnitude(p) {
+    return Math.hypot(p.x, p.y);
 }
 
 /**
@@ -91,7 +109,8 @@ export function getIntersection(a, b, c, d) {
     const uTop = (c.y - a.y) * (a.x - b.x) - (c.x - a.x) * (a.y - b.y);
     const bottom = (d.y - c.y) * (b.x - a.x) - (d.x-c.x)*(b.y-a.y);
 
-    if(bottom !== 0) {
+    const eps = 0.001;
+    if(Math.abs(bottom) > eps) {
         const t = tTop / bottom;
         const u = uTop / bottom;
         if(
@@ -117,7 +136,7 @@ export function getIntersection(a, b, c, d) {
  * @param {number} b 
  * @param {number} top 
  */
-function lerp(a, b, top){
+export function lerp(a, b, top){
     return a + (b - a) * top;
 }
 

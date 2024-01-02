@@ -20,13 +20,20 @@ class Point {
     /**
      * 
      * @param {CanvasRenderingContext2D} ctx 
-     * @param {DrawParams} drawParams
+     * @param {DrawParams} drawOptions
      */
-    draw(ctx, { size = 18, color = 'black', outline = false, fill = false } = {}) {
+    draw(ctx, { 
+        size = 18,
+        color = 'black',
+        outline = false,
+        fill = false,
+        alpha = 1 
+    } = {}) {
         const rad = size / 2;
 
         ctx.beginPath();
         ctx.fillStyle = color;
+        ctx.globalAlpha = alpha;
         ctx.arc(this.x, this.y, rad, 0, Math.PI * 2);
         ctx.fill();
 
@@ -34,6 +41,7 @@ class Point {
             ctx.beginPath();
             ctx.lineWidth = 2;
             ctx.strokeStyle = "yellow";
+            ctx.globalAlpha = alpha;
             ctx.arc(this.x, this.y, rad * 0.6, 0, Math.PI * 2);
             ctx.stroke();
         }
@@ -42,6 +50,7 @@ class Point {
             ctx.beginPath();
             ctx.arc(this.x, this.y, rad * 0.4, 0, Math.PI * 2);
             ctx.fillStyle = "yellow";
+            ctx.globalAlpha = alpha;
             ctx.fill();
         }
     }

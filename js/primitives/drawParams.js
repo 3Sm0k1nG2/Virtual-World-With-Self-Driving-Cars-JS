@@ -6,12 +6,12 @@ class DrawParams {
      * @param {boolean} fill 
      * @param {number[]} dash
      */
-    constructor(size, color, outline, fill, dash){
-        this.size = size;
-        this.color = color;
-        this.outline = outline;
-        this.fill = fill;
-        this.dash = [...dash];
+    constructor(){
+        this.size = 1;
+        this.color = "white";
+        this.outline = false;
+        this.fill = false;
+        this.dash = [];
     }
 }
 

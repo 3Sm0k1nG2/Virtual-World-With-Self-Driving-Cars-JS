@@ -1,52 +1,51 @@
 import Graph from "./math/graph.js";
-import Envelope from "./primitives/envelope.js";
-import Polygon from "./primitives/polygon.js";
+import RoadGeneratorAndDrawer from "./world/roadGeneratorAndDrawer.js";
+import BuildingGeneratorAndDrawer from "./world/buildingGeneratorAndDrawer.js";
+import TreeGeneratorAndDrawer from "./world/treeGeneratorAndDrawer.js";
 
 class World {
     /**
      * @param {Graph} graph 
-     * @param {number} roadWidth 
-     * @param {number} roadRoundness 
+     * @param {RoadGeneratorAndDrawer} roadGeneratorAndDrawer 
+     * @param {BuildingGeneratorAndDrawer} buildingGeneratorAndDrawer 
+     * @param {TreeGeneratorAndDrawer} treeGeneratorAndDrawer 
      */
-    constructor(graph, roadWidth = 100, roadRoundness = 3){
+    constructor(
+        graph, 
+        roadGeneratorAndDrawer,
+        buildingGeneratorAndDrawer,
+        treeGeneratorAndDrawer
+    ){
         this.graph = graph;
-        this.roadWidth = roadWidth;
-        this.roadRoundness = roadRoundness;
+        this.roadGeneratorAndDrawer = roadGeneratorAndDrawer;
+        this.buildingGeneratorAndDrawer = buildingGeneratorAndDrawer;
+        this.treeGeneratorAndDrawer = treeGeneratorAndDrawer;
 
-        /** @type {Envelope[]} */
-        this.envelopes = [];
-        this.roadBorders = [];
+        this.debug = false;
 
         this.generate();
     }
 
     generate() {
-        this.envelopes.length = 0;
-
-        for(const seg of this.graph.segments) {
-            this.envelopes.push(
-                new Envelope(seg, this.roadWidth, this.roadRoundness)
-            );
-        }
-
-        if(!this.envelopes.length) {
-            return;
-        }
-        
-        this.roadBorders = Polygon.union(this.envelopes.map(env => env.polygon))
+        this.roadGeneratorAndDrawer.generate(this.graph);
+        this.buildingGeneratorAndDrawer.generate(
+            this.graph,
+            this.roadGeneratorAndDrawer.width,
+            this.roadGeneratorAndDrawer.roundness
+        );
+        this.treeGeneratorAndDrawer.generate(
+            this.graph,
+            this.roadGeneratorAndDrawer.roadBorders,
+            this.buildingGeneratorAndDrawer.buildings,
+            this.roadGeneratorAndDrawer.roadEnvelopes
+        );
     }
 
     /** @param {CanvasRenderingContext2D} ctx */
     draw(ctx) {
-        for (const env of this.envelopes){
-            env.draw(ctx, { fill: "#BBB", stroke: "#BBB", lineWidth: 15} );
-        }
-        for (const seg of this.graph.segments) {
-            seg.draw(ctx, { color: 'white', width: 4, dash: [10, 10]})
-        }
-        for (const seg of this.roadBorders) {
-            seg.draw(ctx, { color : "white", size: 4 });
-        }
+        this.roadGeneratorAndDrawer.draw(ctx, this.debug);
+        this.buildingGeneratorAndDrawer.draw(ctx, this.debug);
+        this.treeGeneratorAndDrawer.draw(ctx, this.debug);
     }
 }
 

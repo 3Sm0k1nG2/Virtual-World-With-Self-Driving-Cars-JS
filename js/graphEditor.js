@@ -9,11 +9,13 @@ class GraphEditor {
     /**
      * @param {Viewport} viewport 
      * @param {Graph} graph 
+     * @param {number} alpha
      */
-    constructor(viewport, graph){
+    constructor(viewport, graph, alpha = 0.3){
         this.viewport = viewport;
         this.canvas = viewport.canvas;
         this.graph = graph;
+        this.alpha = alpha;
 
         this.ctx = this.canvas.getContext("2d");
         
@@ -100,16 +102,16 @@ class GraphEditor {
 
 
     display() {
-        this.graph.draw(this.ctx);
+        this.graph.draw(this.ctx, { alpha: this.alpha });
         
         if(this.hovered){
-            this.hovered.draw(this.ctx, { fill: true });
+            this.hovered.draw(this.ctx, { fill: true, alpha: this.alpha });
         }
 
         if(this.selected){
             const intent = this.hovered ?? this.mouse;
-            new Segment(this.selected, intent).draw(this.ctx, { dash: [3, 3]});
-            this.selected.draw(this.ctx, {outline: true})
+            new Segment(this.selected, intent).draw(this.ctx, { dash: [3, 3], alpha: this.alpha});
+            this.selected.draw(this.ctx, {outline: true, alpha: this.alpha})
         }
     }
 
