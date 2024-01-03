@@ -1,3 +1,4 @@
+import Building from "../items/building.js";
 import Graph from "../math/graph.js";
 import { add, scale } from "../math/utils.js";
 import Envelope from "../primitives/envelope.js";
@@ -19,7 +20,7 @@ class BuildingGeneratorAndDrawer {
         this.minLength = buildingMinLength;
         this.spacing = betweenBuildingSpacing;
 
-        /** @type {Segment[]} */
+        /** @type {Building[]} */
         this.buildings = [];
     }
 
@@ -38,7 +39,7 @@ class BuildingGeneratorAndDrawer {
         const supports = this.#generateSupports(guides);
         const bases = this.#generateBases(supports);
 
-        this.buildings = bases;
+        this.buildings = bases.map(b => new Building(b));
     }
 
     /** 
@@ -141,9 +142,12 @@ class BuildingGeneratorAndDrawer {
         return bases;
     }
 
-    /** @param {CanvasRenderingContext2D} ctx */
-    draw(ctx) {
-        this.buildings.forEach(b => b.draw(ctx))
+    /** 
+     * @param {CanvasRenderingContext2D} ctx
+     * @param {Point} viewPoint
+     */
+    draw(ctx, viewPoint) {
+        this.buildings.forEach(b => b.draw(ctx, viewPoint))
     }
 }
 

@@ -139,13 +139,20 @@ class Polygon {
      */
     draw(
         ctx,
-        { stroke = "blue", width = 2, fill = "rgba(0,0,255,0.3)", alpha = 1 } = {}
+        { 
+            stroke = "blue",
+            width = 2,
+            fill = "rgba(0,0,255,0.3)",
+            alpha = 1,
+            join = "miter"
+        } = {}
     ) {
         ctx.beginPath();
         ctx.globalAlpha = alpha
         ctx.fillStyle = fill;
         ctx.strokeStyle = stroke;
         ctx.lineWidth = width;
+        ctx.lineJoin = join;
         ctx.moveTo(this.points[0].x, this.points[0].y);
         for (let i = 1; i < this.points.length; i++) {
             ctx.lineTo(this.points[i].x, this.points[i].y);

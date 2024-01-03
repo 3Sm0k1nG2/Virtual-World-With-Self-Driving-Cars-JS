@@ -4,19 +4,21 @@ import Envelope from "../primitives/envelope.js";
 import Point from "../primitives/point.js";
 import Polygon from "../primitives/polygon.js";
 import Segment from "../primitives/segment.js";
+import Tree from "../items/tree.js"
+import Building from "../items/building.js";
 
 class TreeGeneratorAndDrawer {
     constructor(treeSize = 160) {
-        this.size = treeSize;
+        this.treeSize = treeSize;
 
-        /** @type {Point[]} */
+        /** @type {Tree[]} */
         this.trees = [];
     }
 
     /** 
      * @param {Graph} graph
      * @param {Segment[]} roadBorders
-     * @param {Polygon[]} buildings
+     * @param {Building[]} buildings
      * @param {Envelope[]} roadEnvelopes
      * @param {number} trees
      */
@@ -28,7 +30,7 @@ class TreeGeneratorAndDrawer {
     ) {
         const points = [
             ...roadBorders.map(s => [s.p1, s.p2]).flat(),
-            ...buildings.map(b => b.points).flat()
+            ...buildings.map(b => b.base.points).flat()
         ]
 
         const left = Math.min(...points.map(p => p.x));
@@ -37,7 +39,7 @@ class TreeGeneratorAndDrawer {
         const bottom = Math.max(...points.map(p => p.y));
 
         const illegalPolygons = [
-            ...buildings,
+            ...buildings.map(b => b.base),
             ...roadEnvelopes.map(r => r.polygon)
         ]
 
@@ -46,18 +48,18 @@ class TreeGeneratorAndDrawer {
         let tryCount = 0;
         const maxTryCount = 100;
 
-        let tree = null;
+        let treePoint = null;
         let keep = true;
         let closeToSomething = true;
         while(tryCount < maxTryCount) {
-            tree = new Point(
+            treePoint = new Point(
                 lerp(left, right, Math.random()),
                 lerp(bottom, top, Math.random()),
             );
             
             keep = true;
             for(let polygon of illegalPolygons){
-                if(polygon.containsPoint(tree) || polygon.distanceToPoint(tree) < this.size / 2){
+                if(polygon.containsPoint(treePoint) || polygon.distanceToPoint(treePoint) < this.treeSize / 2){
                     keep = false;
                     break;
                 }
@@ -68,7 +70,7 @@ class TreeGeneratorAndDrawer {
             }
 
             for(let spawnedTree of this.trees){
-                if(distance(spawnedTree, tree) < this.size) {
+                if(distance(spawnedTree.center, treePoint) < this.treeSize) {
                     keep = false;
                     break;
                 }
@@ -81,7 +83,7 @@ class TreeGeneratorAndDrawer {
 
             closeToSomething = false;
             for(let polygon of illegalPolygons) {
-                if(polygon.distanceToPoint(tree) < this.size * 2) {
+                if(polygon.distanceToPoint(treePoint) < this.treeSize * 2) {
                     closeToSomething = true;
                     break;
                 }
@@ -91,17 +93,17 @@ class TreeGeneratorAndDrawer {
                 continue;
             }
 
-            this.trees.push(tree);
+            this.trees.push(new Tree(treePoint, this.treeSize));
             tryCount = 0;
         }
     }
 
-    /** @param {CanvasRenderingContext2D} ctx */
-    draw(ctx) {
-        this.trees.forEach(t => t.draw(ctx, {
-            size: this.size,
-            color: "rgba(0,0,0,0.5)"
-        }));
+    /** 
+     * @param {CanvasRenderingContext2D} ctx
+     * @param {Point} viewPoint
+     */
+    draw(ctx, viewPoint) {
+        this.trees.forEach(t => t.draw(ctx, viewPoint));
     }
 }
 

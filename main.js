@@ -5,6 +5,7 @@ import Viewport from "./js/viewport.js";
 import RoadGeneratorAndDrawer from "./js/world/roadGeneratorAndDrawer.js";
 import BuildingGeneratorAndDrawer from "./js/world/buildingGeneratorAndDrawer.js";
 import TreeGeneratorAndDrawer from "./js/world/treeGeneratorAndDrawer.js";
+import { scale } from "./js/math/utils.js";
 
 /** @type {HTMLCanvasElement} */
 const canvas = document.getElementById('world');
@@ -36,7 +37,7 @@ function animate() {
         world.generate();
         oldGraphHash = graph.hash()
     }
-    world.draw(viewport.ctx);
+    world.draw(viewport.ctx, scale(viewport.getOffset(), -1));
 
     graphEditor.display();
 

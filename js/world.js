@@ -41,11 +41,22 @@ class World {
         );
     }
 
-    /** @param {CanvasRenderingContext2D} ctx */
-    draw(ctx) {
+    /** 
+     * @param {CanvasRenderingContext2D} ctx
+     * @param {Point} viewPoint
+     */
+    draw(ctx, viewPoint) {
+        let items = [
+            ...this.buildingGeneratorAndDrawer.buildings,
+            ...this.treeGeneratorAndDrawer.trees,
+        ];
+
+        items
+            .sort((a, b) => b.base.distanceToPoint(viewPoint) - a.base.distanceToPoint(viewPoint))
+            .forEach(i => i.draw(ctx, viewPoint));
         this.roadGeneratorAndDrawer.draw(ctx, this.debug);
-        this.buildingGeneratorAndDrawer.draw(ctx, this.debug);
-        this.treeGeneratorAndDrawer.draw(ctx, this.debug);
+        // this.buildingGeneratorAndDrawer.draw(ctx, viewPoint, this.debug);
+        // this.treeGeneratorAndDrawer.draw(ctx, viewPoint);
     }
 }
 
