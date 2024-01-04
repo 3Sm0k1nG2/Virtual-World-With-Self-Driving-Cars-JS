@@ -16,3 +16,9 @@ DESCRIPTION
 Moving a point connected via a single road to other point crashes the app.  
 DATE ISSUED ON - 1 January 2024  
 DATE FIXED ON - 1 January 2024  
+
+[ISSUED] 4  
+DESCRIPTION  
+Road appears above buildings and trees.    
+DATE ISSUED ON - 1 January 2024  
+DATE FIXED ON - NOT YET
