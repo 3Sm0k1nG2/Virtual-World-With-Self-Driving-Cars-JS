@@ -16,9 +16,9 @@ class BuildingGeneratorAndDrawer {
         buildingMinLength,
         betweenBuildingSpacing
     ) {
-        this.width = buildingWidth;
-        this.minLength = buildingMinLength;
-        this.spacing = betweenBuildingSpacing;
+        this.buildingWidth = buildingWidth;
+        this.buildingMinLength = buildingMinLength;
+        this.betweenBuildingSpacing = betweenBuildingSpacing;
 
         /** @type {Building[]} */
         this.buildings = [];
@@ -31,7 +31,7 @@ class BuildingGeneratorAndDrawer {
      */
     generate(graph, roadWidth, roundness) {
         this.buildings.length = 0;
-        
+
         if(!graph.segments?.length){
             return;
         }
@@ -60,7 +60,7 @@ class BuildingGeneratorAndDrawer {
             initials.push(
                 new Envelope(
                     seg,
-                    roadWidth + this.width + this.spacing * 2,
+                    roadWidth + this.buildingWidth + this.betweenBuildingSpacing * 2,
                     roundness
                 )
             )
@@ -81,7 +81,7 @@ class BuildingGeneratorAndDrawer {
         let seg = null;
         for(let i = 0; i < guides.length; i++){
             seg = guides[i];
-            if(seg.length < this.minLength) {
+            if(seg.length < this.buildingMinLength) {
                 guides.splice(i , 1);
                 i--;
             }
@@ -104,9 +104,9 @@ class BuildingGeneratorAndDrawer {
         let q2 = null;
 
         for(let guide of guides){
-            length = guide.length + this.spacing;
-            buildingCount = Math.floor(length / (this.minLength + this.spacing));
-            buildingLength = length / buildingCount - this.spacing;
+            length = guide.length + this.betweenBuildingSpacing;
+            buildingCount = Math.floor(length / (this.buildingMinLength + this.betweenBuildingSpacing));
+            buildingLength = length / buildingCount - this.betweenBuildingSpacing;
 
             dir = guide.directionVector;
 
@@ -115,7 +115,7 @@ class BuildingGeneratorAndDrawer {
             supports.push(new Segment(q1, q2));
 
             for (let i = 1; i < buildingCount; i++){
-                q1 = add(q2, scale(dir, this.spacing));
+                q1 = add(q2, scale(dir, this.betweenBuildingSpacing));
                 q2 = add(q1, scale(dir, buildingLength))
                 supports.push(new Segment(q1, q2));
             }
@@ -129,7 +129,7 @@ class BuildingGeneratorAndDrawer {
         const bases = [];
 
         for(let seg of supports){
-            bases.push(new Envelope(seg, this.width).polygon)
+            bases.push(new Envelope(seg, this.buildingWidth).polygon)
         }
 
         const eps = 0.001;
@@ -137,7 +137,7 @@ class BuildingGeneratorAndDrawer {
             for(let j = i + 1; j < bases.length; j++){
                 if(
                     bases[i].intersectsPolygon(bases[j])
-                    || bases[i].distanceToPolygon(bases[j]) < this.spacing - eps
+                    || bases[i].distanceToPolygon(bases[j]) < this.betweenBuildingSpacing - eps
                 ) {
                     bases.splice(j, 1);
                     j--;

@@ -1,4 +1,4 @@
-import DrawParams from "../primitives/drawParams.js";
+import DrawOptions from "../primitives/drawOptions.js";
 import Point from "../primitives/point.js";
 import Segment from "../primitives/segment.js";
 
@@ -66,6 +66,7 @@ class Graph {
         return true;
     }
 
+    /** @param {Point} point */
     removePoint(point) {
         this.getSegmentsWithPoint(point).forEach(s => this.removeSegment(s));
         this.points.splice(this.points.indexOf(point), 1);
@@ -119,7 +120,7 @@ class Graph {
 
     /** 
      * @param {CanvasRenderingContext2D} ctx 
-     * @param {DrawParams} drawOptions
+     * @param {DrawOptions} drawOptions
      */
     draw(ctx, drawOptions) {
         for (const seg of this.segments) {

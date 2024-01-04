@@ -1,4 +1,4 @@
-import DrawParams from "./drawParams.js";
+import DrawOptions from "./drawOptions.js";
 
 class Point {
     /**
@@ -20,16 +20,16 @@ class Point {
     /**
      * 
      * @param {CanvasRenderingContext2D} ctx 
-     * @param {DrawParams} drawOptions
+     * @param {DrawOptions} drawOptions
      */
     draw(ctx, { 
-        size = 18,
+        width = 18,
         color = 'black',
         outline = false,
         fill = false,
         alpha = 1 
     } = {}) {
-        const rad = size / 2;
+        const rad = width / 2;
 
         ctx.beginPath();
         ctx.fillStyle = color;

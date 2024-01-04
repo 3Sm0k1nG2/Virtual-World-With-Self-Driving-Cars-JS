@@ -24,10 +24,17 @@ class Viewport {
 
     /** @param {MouseEvent} e */
     #addEventListeners(e) {
+        this.canvas.addEventListener("contextmenu", this.#disableEvent)
+
         this.canvas.addEventListener("mousewheel", this.#handleMouseWheel.bind(this), {passive: true});
         this.canvas.addEventListener("mousedown", this.#handleMouseDown.bind(this));
         this.canvas.addEventListener("mousemove", this.#handleMouseMove.bind(this));
         this.canvas.addEventListener("mouseup", this.#handleMouseUp.bind(this));
+    }
+
+    /** @param {MouseEvent} e */
+    #disableEvent = (e) => {
+        e.preventDefault();
     }
 
     /** @param {WheelEvent} e */

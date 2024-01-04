@@ -1,4 +1,5 @@
 import Point from "../primitives/point.js";
+import Segment from "../primitives/segment.js";
 
 /**
  * 
@@ -6,16 +7,48 @@ import Point from "../primitives/point.js";
  * @param {Point[]} points 
  * @param {number} threshold 
  */
-export function getNearestPoint(loc, points, threshold = Number.MAX_SAFE_INTEGER){
+export function getNearestPoint(
+    loc,
+    points,
+    threshold = Number.MAX_SAFE_INTEGER
+){
     let minDist = Number.MAX_SAFE_INTEGER;
     let nearest = null;
 
-    for(const point of points){
-        const dist = distance(point, loc);
+    let dist = undefined;
+    for(let point of points){
+        dist = distance(point, loc);
 
         if(dist < minDist && (dist/100) < threshold){
             minDist = dist;
             nearest = point;
+        }
+    }
+
+    return nearest;
+}
+
+/**
+ * 
+ * @param {Point} loc 
+ * @param {Segment[]} segments 
+ * @param {number} threshold 
+ */
+export function getNearestSegment(
+    loc,
+    segments,
+    threshold = Number.MAX_SAFE_INTEGER
+){
+    let minDist = Number.MAX_SAFE_INTEGER;
+    let nearest = null;
+
+    let dist = undefined;
+    for(let segment of segments){
+        dist = segment.distanceToPoint(loc);
+
+        if(dist < minDist && (dist/100) < threshold){
+            minDist = dist;
+            nearest = segment;
         }
     }
 
@@ -78,6 +111,11 @@ export function normalize(p) {
 /** @param {Point} p */
 export function magnitude(p) {
     return Math.hypot(p.x, p.y);
+}
+
+/** @param {Point} p */
+export function perpendicular(p){
+    return new Point(-p.y, p.x);
 }
 
 /**

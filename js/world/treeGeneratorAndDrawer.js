@@ -16,14 +16,12 @@ class TreeGeneratorAndDrawer {
     }
 
     /** 
-     * @param {Graph} graph
      * @param {Segment[]} roadBorders
      * @param {Building[]} buildings
      * @param {Envelope[]} roadEnvelopes
      * @param {number} trees
      */
     generate(
-        graph,
         roadBorders,
         buildings,
         roadEnvelopes, 

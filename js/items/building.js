@@ -1,12 +1,22 @@
 import { average, getFake3dPoint} from "../math/utils.js";
+import Point from "../primitives/point.js";
 import Polygon from "../primitives/polygon.js";
 
 class Building {
-    constructor(poly, height = 200) {
-       this.base = poly;
+    /**
+     * @param {Polygon} polygon 
+     * @param {number} height 
+     */
+    constructor(polygon, height = 200) {
+       this.base = polygon;
        this.height = height;
     }
  
+    /**
+     * 
+     * @param {CanvasRenderingContext2D} ctx 
+     * @param {Point} viewPoint 
+     */
     draw(ctx, viewPoint) {
        const topPoints = this.base.points.map((p) =>
           getFake3dPoint(p, viewPoint, this.height * 0.6)
@@ -16,11 +26,11 @@ class Building {
        const sides = [];
        for (let i = 0; i < this.base.points.length; i++) {
           const nextI = (i + 1) % this.base.points.length;
-          const poly = new Polygon([
+          const polygon = new Polygon([
              this.base.points[i], this.base.points[nextI],
              topPoints[nextI], topPoints[i]
           ]);
-          sides.push(poly);
+          sides.push(polygon);
        }
        sides.sort(
           (a, b) =>
@@ -58,8 +68,8 @@ class Building {
           side.draw(ctx, { fill: "white", stroke: "#AAA" });
        }
        ceiling.draw(ctx, { fill: "white", stroke: "white", lineWidth: 6 });
-       for (const poly of roofPolys) {
-          poly.draw(ctx, { fill: "#D44", stroke: "#C44", lineWidth: 8, join: "round" });
+       for (const polygon of roofPolys) {
+          polygon.draw(ctx, { fill: "#D44", stroke: "#C44", lineWidth: 8, join: "round" });
        }
     }
  }

@@ -9,8 +9,8 @@ class RoadGeneratorAndDrawer {
      * @param {number} roadRoundness 
      */
     constructor(roadWidth, roadRoundness) {
-        this.width = roadWidth;
-        this.roundness = roadRoundness;
+        this.roadWidth = roadWidth;
+        this.roadRoundness = roadRoundness;
         
         /** @type {Segment[]} */
         this.pointToPointSegments = [];
@@ -33,7 +33,7 @@ class RoadGeneratorAndDrawer {
 
         for(const seg of graph.segments) {
             this.roadEnvelopes.push(
-                new Envelope(seg, this.width, this.roundness)
+                new Envelope(seg, this.roadWidth, this.roadRoundness)
             );
         }
 
@@ -44,7 +44,7 @@ class RoadGeneratorAndDrawer {
 
     /** @param {CanvasRenderingContext2D} ctx */
     #drawBorders(ctx) {
-        this.roadBorders.forEach(b => b.draw(ctx, { color : "white", size: 4 }))
+        this.roadBorders.forEach(b => b.draw(ctx, { color : "white", width: 4 }))
     }
 
     /** @param {CanvasRenderingContext2D} ctx */
@@ -54,7 +54,7 @@ class RoadGeneratorAndDrawer {
 
     /** @param {CanvasRenderingContext2D} ctx */
     #drawRoadSurfaceMarkings(ctx) {
-        this.pointToPointSegments.forEach(s => s.draw(ctx, { color: '#ffffff', width: 10, dash: [10, 10], alpha: 1 }))
+        this.pointToPointSegments.forEach(s => s.draw(ctx, { color: '#ffffff', width: 5, dash: [10, 10], alpha: 1 }))
     }
 
     /** @param {CanvcasRenderingContext2D} ctx */

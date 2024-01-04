@@ -1,5 +1,5 @@
 import { add, distance, dot, magnitude, normalize, scale, subtract } from "../math/utils.js";
-import DrawParams from "./drawParams.js";
+import DrawOptions from "./drawOptions.js";
 
 class Segment {
     /**
@@ -60,13 +60,14 @@ class Segment {
     /**
      * 
      * @param {CanvasRenderingContext2D} ctx 
-     * @param {DrawParams} drawOptions
+     * @param {DrawOptions} drawOptions
      */
-    draw(ctx, { size = 2, color = "black", dash = [], alpha = 1 } = {}) {
+    draw(ctx, { width = 2, color = "black", dash = [], alpha = 1, cap = "butt" } = {}) {
         ctx.beginPath();
-        ctx.lineWidth = size;
+        ctx.lineWidth = width;
         ctx.strokeStyle = color;
         ctx.globalAlpha = alpha;
+        ctx.lineCap = cap;
         ctx.setLineDash(dash);
         ctx.moveTo(this.p1.x, this.p1.y);
         ctx.lineTo(this.p2.x, this.p2.y);
