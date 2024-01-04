@@ -22,9 +22,14 @@ class RoadGeneratorAndDrawer {
 
     /** @param {Graph} graph */
     generate(graph) {
-        this.pointToPointSegments = graph.segments;
-
         this.roadEnvelopes.length = 0;
+        this.roadBorders.length = 0;
+
+        if(!graph.segments?.length){
+            return;
+        }
+
+        this.pointToPointSegments = graph.segments;
 
         for(const seg of graph.segments) {
             this.roadEnvelopes.push(

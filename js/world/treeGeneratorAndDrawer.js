@@ -28,11 +28,17 @@ class TreeGeneratorAndDrawer {
         buildings,
         roadEnvelopes, 
     ) {
+        this.trees.length = 0;
+
         const points = [
             ...roadBorders.map(s => [s.p1, s.p2]).flat(),
             ...buildings.map(b => b.base.points).flat()
         ]
-
+        
+        if(!points?.length){
+            return;
+        }
+        
         const left = Math.min(...points.map(p => p.x));
         const right = Math.max(...points.map(p => p.x));
         const top = Math.min(...points.map(p => p.y));
@@ -42,8 +48,6 @@ class TreeGeneratorAndDrawer {
             ...buildings.map(b => b.base),
             ...roadEnvelopes.map(r => r.polygon)
         ]
-
-        this.trees.length = 0;
 
         let tryCount = 0;
         const maxTryCount = 100;
@@ -66,6 +70,7 @@ class TreeGeneratorAndDrawer {
             }
 
             if(!keep) {
+                tryCount++;
                 continue;
             }
 

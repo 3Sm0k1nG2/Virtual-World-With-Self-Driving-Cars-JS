@@ -30,6 +30,12 @@ class BuildingGeneratorAndDrawer {
      * @param {number} roundness
      */
     generate(graph, roadWidth, roundness) {
+        this.buildings.length = 0;
+        
+        if(!graph.segments?.length){
+            return;
+        }
+
         const initials = this.#generateInitialEnvelopes(
             graph.segments,
             roadWidth,
@@ -47,7 +53,7 @@ class BuildingGeneratorAndDrawer {
      * @param {number} roadWidth
      * @param {number} roundness
      */
-    #generateInitialEnvelopes(graphSegments, roadWidth, roundness) {
+    #generateInitialEnvelopes(graphSegments = [], roadWidth, roundness) {
         const initials = [];
 
         for(let seg of graphSegments) {

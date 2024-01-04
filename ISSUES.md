@@ -1,18 +1,18 @@
-[ISSUED] 1  
+[FIXED] 1  
 DESCRIPTION  
 Calling the GraphEditor dispose method makes the app infinite cycle.   
 App becomes unresponsive.  
 DATE ISSUED ON - 1 January 2024  
-DATE FIXED ON - NOT YET
+DATE FIXED ON - 1 January 2024  
 
-[ISSUED] 2  
+[FIXED] 2  
 DESCRIPTION  
 Running a road point through another point crashes the app.  
 DATE ISSUED ON - 1 January 2024  
-DATE FIXED ON - NOT YET
+DATE FIXED ON - 1 January 2024  
 
-[ISSUED] 3  
+[FIXED] 3  
 DESCRIPTION  
-Having two points connected via a road crashes the app.  
+Moving a point connected via a single road to other point crashes the app.  
 DATE ISSUED ON - 1 January 2024  
-DATE FIXED ON - NOT YET
+DATE FIXED ON - 1 January 2024  
