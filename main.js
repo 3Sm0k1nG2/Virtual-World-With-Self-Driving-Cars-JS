@@ -16,6 +16,8 @@ import ParkingEditor from "./js/editors/markingEditors/parkingEditor.js";
 import LightEditor from "./js/editors/markingEditors/lightEditor.js";
 import TargetEditor from "./js/editors/markingEditors/targetEditor.js";
 
+globalThis.load = load;
+
 /** @type {HTMLCanvasElement} */
 const canvas = document.getElementById('world');
 canvas.width = window.outerWidth * 0.9;
@@ -30,17 +32,16 @@ const lightBtn = document.getElementById('lightBtn');
 const startBtn = document.getElementById('startBtn');
 const targetBtn = document.getElementById('targetBtn');
 
-const graph = new Graph();
-load();
-const world = new World(
-    graph,
+let world = getSavedWorld() ?? new World(
+    new Graph(),
     new RoadGeneratorAndDrawer(100, 10),
     new LaneGuidesGeneratorAndDrawer(),
     new BuildingGeneratorAndDrawer(100, 110, 50),
     new TreeGeneratorAndDrawer()
 );
+const graph = world.graph;
 world.debug = false;
-const viewport = new Viewport(canvas);
+const viewport = new Viewport(canvas, world.zoom, world.offset);
 
 const tools = {
     editors: {
@@ -79,12 +80,26 @@ function animate() {
 }
 
 globalThis.dispose = () => {
-    tools.editors.graph.editor.dispose();
-    world.markings.length = 0;
+    world.dispose();
 }
 
 globalThis.save = () => {
-    localStorage.setItem("graph", JSON.stringify(graph));
+    world.zoom = viewport.zoom;
+    world.offset = viewport.offset;
+
+    const element = document.createElement('a');
+    element.setAttribute(
+        "href",
+        "data:application/json;charset=utf-8," +
+            encodeURIComponent(JSON.stringify(world))
+    )
+
+    const filename = "name.world";
+    element.setAttribute("download", filename);
+
+    element.click();
+
+    localStorage.setItem("world", JSON.stringify(world));
 }
 
 globalThis.debug = () => {
@@ -108,25 +123,42 @@ function setMode(mode) {
     editorTool.editor.enable();
 }
 
-function load() {
-    const data = localStorage.getItem("graph");
+function getSavedWorld() {
+    const data = localStorage.getItem("world");
 
     if (!data) {
         return;
     }
 
-    /** @type {{points: string[], segments: string[]}} */
-    const graphData = JSON.parse(data);
+    /** @type {World} */
+    const worldRawData = JSON.parse(data);
 
-    if (!graphData.points?.length || !graphData.segments?.length) {
-        localStorage.removeItem("graph");
+    if (!worldRawData?.graph) {
+        localStorage.removeItem("world");
         return;
     }
 
-    const savedGraph = Graph.load(graphData);
+    return World.load(worldRawData);
+}
 
-    graph.points = savedGraph.points;
-    graph.segments = savedGraph.segments;
+function load(event) {
+    const file = event.target.files[0];
+
+    if(!file) {
+        alert("No file selected");
+        return;
+    }
+
+    const reader = new FileReader();
+    reader.readAsText(file);
+
+    reader.onload = (evt) => {
+        const fielContent = evt.target.result;
+        const JSONData = JSON.parse(fielContent);
+        world = World.load(JSONData);
+        localStorage.setItem("world", JSON.stringify(world));
+        location.reload();
+    }
 }
 
 function disableEditors() {

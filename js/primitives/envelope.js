@@ -9,8 +9,21 @@ class Envelope  {
      * @param {number} width
      */
     constructor(skeleton, width, roundness = 1){
+        if(!skeleton){
+            return;
+        }
+
         this.skeleton = skeleton;
         this.polygon = this.#generatePolygon(width, roundness);
+    }
+
+    /** @param {Envelope} rawData */
+    static load(rawData) {
+        const env = new Envelope();
+        env.skeleton = new Segment(rawData.skeleton.p1, rawData.skeleton.p2);
+        env.polygon = Polygon.load(rawData.polygon);
+
+        return env;
     }
 
     /** @param {number} width */

@@ -16,6 +16,11 @@ class Tree {
         this.base = this.#generateLevel(center, size);
     }
 
+    /** @param {Tree} rawData */
+    static load(rawData){
+        return new Tree(rawData.center, rawData.size, rawData.heightCoef);
+    }
+
     /**
      * 
      * @param {Point} point 

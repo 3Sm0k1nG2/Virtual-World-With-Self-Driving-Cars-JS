@@ -1,3 +1,4 @@
+import { MARKING_START } from "../consts.js";
 import { angle } from "../math/utils.js";
 import Point from "../primitives/point.js";
 import Marking from "./marking.js";
@@ -11,6 +12,8 @@ class Start extends Marking {
      */
     constructor(center, directionVector, width, height) {
         super(center, directionVector, width, height);
+
+        this.type = MARKING_START;
 
         this.img = new Image();
         this.img.src = "car.png";

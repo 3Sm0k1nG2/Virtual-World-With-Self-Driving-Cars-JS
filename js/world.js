@@ -6,6 +6,12 @@ import TreeGeneratorAndDrawer from "./world/treeGeneratorAndDrawer.js";
 import Light from "./markings/light.js";
 import { getNearestPoint } from "./math/utils.js";
 import Point from "./primitives/point.js";
+import Envelope from "./primitives/envelope.js";
+import Segment from "./primitives/segment.js";
+import Building from "./items/building.js";
+import Tree from "./items/tree.js";
+import { TRAFFIC_LIGHT_GREEN, TRAFFIC_LIGHT_RED, TRAFFIC_LIGHT_YELLOW } from "./consts.js";
+import MarkingLoader from "./markingLoader.js";
 
 class World {
     /**
@@ -33,8 +39,37 @@ class World {
         this.markings = [];
 
         this.frameCount = 0;
+        
+        this.zoom = 1;
+        this.offset = null;
 
-        this.generate();
+        // this.generate();
+    }
+
+    /** @param {World} rawData */
+    static load(rawData){
+        const world = new World(
+            Graph.load(rawData.graph),
+            new RoadGeneratorAndDrawer(rawData.roadGeneratorAndDrawer.roadWidth, rawData.roadGeneratorAndDrawer.roadRoundness),
+            new LaneGuidesGeneratorAndDrawer(),
+            new BuildingGeneratorAndDrawer(
+                rawData.buildingGeneratorAndDrawer.buildingWidth,
+                rawData.buildingGeneratorAndDrawer.buildingMinLength,
+                rawData.buildingGeneratorAndDrawer.betweenBuildingSpacing
+            ),
+            new TreeGeneratorAndDrawer(rawData.treeGeneratorAndDrawer.treeSize)
+        )
+        world.roadGeneratorAndDrawer.roadEnvelopes = rawData.roadGeneratorAndDrawer.roadEnvelopes.map(e => Envelope.load(e))
+        world.roadGeneratorAndDrawer.pointToPointSegments = rawData.roadGeneratorAndDrawer.pointToPointSegments.map(s => Segment.load(s))
+        world.roadGeneratorAndDrawer.roadBorders = rawData.roadGeneratorAndDrawer.roadBorders.map(b => Segment.load(b))
+        world.laneGuidesGeneratorAndDrawer.laneGuides = rawData.laneGuidesGeneratorAndDrawer.laneGuides.map(s => Segment.load(s))
+        world.markings = rawData.markings.map(m => new MarkingLoader().load(m));
+        world.buildingGeneratorAndDrawer.buildings = rawData.buildingGeneratorAndDrawer.buildings.map(b => Building.load(b))
+        world.treeGeneratorAndDrawer.trees = rawData.treeGeneratorAndDrawer.trees.map(t => Tree.load(t))
+        world.zoom = rawData.zoom;
+        world.offset = rawData.offset;
+
+        return world;
     }
 
     generate() {
@@ -78,7 +113,7 @@ class World {
         const intersections = this.#getIntersections();
 
         if(!intersections?.length){
-            lights.forEach(l => l.state = "green");
+            lights.forEach(l => l.state = TRAFFIC_LIGHT_GREEN);
         }
 
         const controlCenters = [];
@@ -110,17 +145,23 @@ class World {
             );
             const greenYellowState =
                 cTick % (greenDuration + yellowDuration) < greenDuration
-                    ? "green"
-                    : "yellow";
+                    ? TRAFFIC_LIGHT_GREEN
+                    : TRAFFIC_LIGHT_YELLOW;
             for (let i = 0; i < center.lights.length; i++) {
                 if (i == greenYellowIndex) {
                     center.lights[i].state = greenYellowState;
                 } else {
-                    center.lights[i].state = "red";
+                    center.lights[i].state = TRAFFIC_LIGHT_RED;
                 }
             }
         }
         this.frameCount++;
+    }
+
+    dispose() {
+        this.graph.dispose();
+        this.markings.length = 0;
+        this.roadGeneratorAndDrawer.pointToPointSegments.length = 0;
     }
 
     /** 

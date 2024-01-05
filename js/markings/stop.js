@@ -1,3 +1,4 @@
+import { MARKING_STOP } from "../consts.js";
 import { angle } from "../math/utils.js";
 import Point from "../primitives/point.js";
 import Marking from "./marking.js";
@@ -11,6 +12,8 @@ class Stop extends Marking {
      */
     constructor(center,directionVector,width,height) {
         super(center, directionVector, width, height);
+
+        this.type = MARKING_STOP;
 
         this.borders = [this.polygon.segments[2]];
     }

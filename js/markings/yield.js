@@ -1,3 +1,4 @@
+import { MARKING_YIELD } from "../consts.js";
 import { angle } from "../math/utils.js";
 import Marking from "./marking.js";
 
@@ -10,6 +11,8 @@ class Yield extends Marking {
      */
     constructor(center, directionVector, width, height) {
         super(center, directionVector, width, height);
+
+        this.type = MARKING_YIELD;
 
         this.border = this.polygon.segments[2];
     }

@@ -11,6 +11,11 @@ class Segment {
         this.p2 = p2;
     }
 
+    /** @param {Segment} rawData */
+    static load(rawData) {
+        return new Segment(rawData.p1, rawData.p2);
+    }
+
     get length() {
         return distance(this.p1, this.p2);
     }

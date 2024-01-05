@@ -14,6 +14,13 @@ class Polygon {
         }
     }
 
+    /** @param {Polygon} rawData */
+    static load(rawData) {
+        return new Polygon(
+            rawData.points.map(pRaw => new Point(pRaw.x, pRaw.y))
+        );
+    }
+
     /** @param {Polygon[]} polys */
     static union(polys) {
         Polygon.multiBreak(polys);

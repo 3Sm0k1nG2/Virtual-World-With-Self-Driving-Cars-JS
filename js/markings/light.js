@@ -1,3 +1,4 @@
+import { MARKING_LIGHT, TRAFFIC_LIGHT_GREEN, TRAFFIC_LIGHT_OFF, TRAFFIC_LIGHT_RED, TRAFFIC_LIGHT_YELLOW } from "../consts.js";
 import { add, lerp2D, perpendicular, scale } from "../math/utils.js";
 import Segment from "../primitives/segment.js";
 import Marking from "./marking.js";
@@ -12,7 +13,9 @@ class Light extends Marking {
     constructor(center, directionVector, width, height) {
         super(center, directionVector, width, height);
 
-        this.state = "off";
+        this.type = MARKING_LIGHT;
+
+        this.state = TRAFFIC_LIGHT_OFF;
         this.border = this.polygon.segments[0];
     }
 
@@ -38,13 +41,13 @@ class Light extends Marking {
         red.draw(ctx, { size: this.height * 0.6, color: "#600" });
 
         switch (this.state) {
-            case "green":
+            case TRAFFIC_LIGHT_GREEN:
                 green.draw(ctx, { size: this.height * 0.6, color: "#0F0" });
                 break;
-            case "yellow":
+            case TRAFFIC_LIGHT_YELLOW:
                 yellow.draw(ctx, { size: this.height * 0.6, color: "#FF0" });
                 break;
-            case "red":
+            case TRAFFIC_LIGHT_RED:
                 red.draw(ctx, { size: this.height * 0.6, color: "#F00" });
                 break;
         }

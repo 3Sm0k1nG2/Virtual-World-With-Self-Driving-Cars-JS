@@ -1,3 +1,4 @@
+import { MARKING_CROSSING } from "../consts.js";
 import { add, perpendicular, scale } from "../math/utils.js";
 import Point from "../primitives/point.js";
 import Segment from "../primitives/segment.js";
@@ -12,6 +13,8 @@ class Crossing extends Marking {
      */
     constructor(center,directionVector,width,height) {
         super(center, directionVector, width, height);
+
+        this.type = MARKING_CROSSING;
 
         this.borders = [this.polygon.segments[0], this.polygon.segments[2]]
     }

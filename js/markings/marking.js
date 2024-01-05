@@ -16,6 +16,8 @@ class Marking {
         this.width = width;
         this.height = height;
 
+        this.type = undefined;
+
         this.support = new Segment(
             translate(center, angle(directionVector), height / 2),
             translate(center, angle(directionVector), -height / 2),

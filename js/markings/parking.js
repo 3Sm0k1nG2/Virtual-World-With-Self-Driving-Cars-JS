@@ -1,3 +1,4 @@
+import { MARKING_PARKING } from "../consts.js";
 import { angle } from "../math/utils.js";
 import Marking from "./marking.js";
 
@@ -10,6 +11,8 @@ class Parking extends Marking {
      */
     constructor(center, directionVector, width, height) {
         super(center, directionVector, width, height);
+
+        this.type = MARKING_PARKING;
 
         this.borders = [this.polygon.segments[0], this.polygon.segments[2]];
     }

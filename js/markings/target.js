@@ -1,3 +1,4 @@
+import { MARKING_TARGET } from "../consts.js";
 import Marking from "./marking.js";
 
 class Target extends Marking {
@@ -9,6 +10,8 @@ class Target extends Marking {
      */
     constructor(center, directionVector, width, height) {
         super(center, directionVector, width, height);
+
+        this.type = MARKING_TARGET;
     }
 
     /** @param {CanvasRenderingContext2D} ctx */
