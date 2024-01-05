@@ -32,3 +32,12 @@ Road appears above buildings and trees.
 
 **DATE ISSUED ON** - ***4th January 2024***  
 **DATE FIXED ON** - ***4th January 2024***  
+
+---
+
+#### [ISSUED] #5  
+**DESCRIPTION**  
+Light marking does not change traffic colors.  
+
+**DATE ISSUED ON** - ***5th January 2024***  
+**DATE FIXED ON** - NOT YET  
