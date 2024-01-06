@@ -44,9 +44,9 @@ Light marking does not change traffic colors.
 
 ---
 
-#### [ISSUED] #6  
+#### [FIXED] #6  
 **DESCRIPTION**  
 README.md @freeCodeCamp.org link is not an actual link.
 
 **DATE ISSUED ON** - ***6th January 2024***  
-**DATE FIXED ON** - NOT YET   
+**DATE FIXED ON** - ***6th January 2024***  

@@ -3,8 +3,11 @@
 This repository is used to store my progress following a tutorial.
 
 The tutorial could be found here:  
-<a href="Build a Virtual World Filled with Self-Driving Cars – JavaScript Tutorial">Build a Virtual World Filled with Self-Driving Cars – JavaScript Tutorial from @freeCodeCamp.org</a>  
-<a href="https://www.youtube.com/playlist?list=PLB0Tybl0UNfYoJE7ZwsBQoDIG4YN9ptyY">Self-driving Car - JavaScript Course from @Radu</a>
+<a href="https://www.youtube.com/watch?v=5iHejdqYIa8">Build a Virtual World Filled with Self-Driving Cars – JavaScript Tutorial by @freeCodeCamp.org</a>  
+and   
+<a href="https://www.youtube.com/playlist?list=PLB0Tybl0UNfZtY5IQl1aNwcoOPJNtnPEO">A Virtual World - JavaScript Course (Self-driving Car: Phase 2) by @Radu</a>  
+or  
+<a href="https://www.youtube.com/playlist?list=PLB0Tybl0UNfYoJE7ZwsBQoDIG4YN9ptyY">Self-driving Car - JavaScript Course by @Radu</a>  
 
 @freeCodeCamp.org  
 **Youtube** <a href="https://www.youtube.com/@freecodecamp">https://www.youtube.com/@freecodecamp</a>  
