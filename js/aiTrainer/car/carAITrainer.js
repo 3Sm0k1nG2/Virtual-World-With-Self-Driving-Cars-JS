@@ -51,7 +51,16 @@ class CarAITrainer {
         }
     }
 
+    #forceCrashIdlingCars() {
+        for(let subjectId in this.subjects){
+            if(!this.subjects[subjectId].object.speed){
+                this.simulateCrash(this.subjects[subjectId]);
+            }
+        }
+    }
+
     refreshBestSubject() {
+        this.#forceCrashIdlingCars();
         this.#updateBestCarByDistanceTraveled();
     }
 
@@ -60,10 +69,14 @@ class CarAITrainer {
      * @param {number} mutator 0 - 1 Fraction
      */
     mutateCars(neuralNetworkManager, mutator) {
+        let bestBrain = this.bestSubject.object.brain;
+
         for(let subjectId in this.subjects){
             this.subjects[subjectId].object.brain = neuralNetworkManager.cloneNetwork(this.bestSubject.object.brain);
             neuralNetworkManager.mutateNetwork(this.subjects[subjectId].object.brain, mutator);
         }
+
+        this.bestSubject.object.brain = bestBrain;
     }
 
     /** @param {TrainingSubject<Car>} subject */

@@ -84,17 +84,20 @@ const aiManager = new AIManager(
 );
 
 const carN = 100;
-const mutator = 0.2;
+const mutator = 0.15;
 
 const eventListenerModuleBuilder = new EventListenerModuleBuilder();
 eventListenerModuleBuilder.registerEvents(...Object.keys(carEventTypes));
-const cars = generateCars(eventListenerModuleBuilder, carN);
-const carAiTrainer = new CarAITrainer(cars);
+const carAiTrainer = new CarAITrainer(generateCars(eventListenerModuleBuilder, carN));
 
 const traffic = [];
 const roadBorders = world.roadGeneratorAndDrawer.roadBorders;
-    
-world.cars = cars;
+
+if(aiManager.bestBrain) {
+    carAiTrainer.bestSubject.object.brain = aiManager.bestBrain;
+}
+
+world.cars = Object.values(carAiTrainer.subjects).map(s => s.object);
 world.bestCar = carAiTrainer.bestSubject.object;
 world.showStartMarkings;
 
@@ -103,10 +106,8 @@ viewport.offset.y = world.bestCar.y;
 
 const visualizer = new Visualizer();
 
-let bestCar = cars[0];
-if (aiManager.bestBrain) {
-    aiManager.mutateCars(cars, mutator);
-}
+const neuralNetworkManager = new NeuralNetworkManager();
+carAiTrainer.mutateCars(neuralNetworkManager, mutator);
 
 let previewAll = true;
 let isPaused = false;
@@ -123,15 +124,17 @@ updateTick();
 function updateTick(time) {
     if (!isPaused) {
         for(let subjectId in carAiTrainer.subjects) {
-            carAiTrainer.subjects[subjectId].object.update([...roadBorders, ...(traffic.length ? traffic.map(v => v.polygon.borders).reduce((prev, curr) => [...prev, ...curr]) : [])], aiManager.neuralNetworkManager);
+            carAiTrainer.subjects[subjectId].object.update([...roadBorders, ...(traffic.length ? traffic.map(v => v.polygon.borders).reduce((prev, curr) => [...prev, ...curr]) : [])], neuralNetworkManager);
         }
-        traffic.forEach(v => v.update([...roadBorders], aiManager.neuralNetworkManager));
+        traffic.forEach(v => v.update([...roadBorders], neuralNetworkManager));
 
         carAiTrainer.refreshBestSubject();
         world.bestCar = carAiTrainer.bestSubject.object;
         
         viewport.offset.x = -world.bestCar.x;
         viewport.offset.y = -world.bestCar.y;
+
+        console.log(Object.keys(carAiTrainer.subjects).length);
 
         animate(time);
     }
@@ -186,7 +189,7 @@ function generateCars(eventListenerModuleBuilder, count) {
 function init(aiManager) {
     document.getElementById("saveAction")
         .addEventListener('click', (e) => {
-            aiManager.changeBrain(bestCar.brain);
+            aiManager.changeBrain(carAiTrainer.bestSubject.object.brain);
             aiManager.storeBestBrain()
         });
     document.getElementById("clearAction")
@@ -218,6 +221,6 @@ function init(aiManager) {
         .addEventListener('click', (e) => { e.stopPropagation(); e.preventDefault() });
 
     if(autoTrain){
-        setTimeout(() => {aiManager.changeBrain(carAiTrainer.bestSubject.object.brain); aiManager.storeBestBrain(); location.reload()}, 25 * 1000)
+        setTimeout(() => {aiManager.changeBrain(carAiTrainer.bestSubject.object.brain); aiManager.storeBestBrain(); location.reload()}, 10 * 1000)
     }
 }
