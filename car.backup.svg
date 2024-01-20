@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   sodipodi:docname="car.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="193.04015"
+     inkscape:cy="529.97654"
+     inkscape:window-width="1920"
+     inkscape:window-height="1057"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <linearGradient
+       id="linearGradient10"
+       inkscape:collect="always">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0.34159923"
+         id="stop10" />
+      <stop
+         style="stop-color:#dcdcdc;stop-opacity:1;"
+         offset="0.63584274"
+         id="stop13" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="1"
+         id="stop11" />
+    </linearGradient>
+    <linearGradient
+       id="swatch191"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#d9d9d9;stop-opacity:1;"
+         offset="0"
+         id="stop192" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient136">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0"
+         id="stop139" />
+      <stop
+         style="stop-color:#939393;stop-opacity:1;"
+         offset="0.52594811"
+         id="stop140" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="1"
+         id="stop141" />
+    </linearGradient>
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect31"
+       is_visible="true"
+       lpeversion="1"
+       nodesatellites_param="F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1"
+       radius="0"
+       unit="px"
+       method="auto"
+       mode="F"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect30"
+       is_visible="true"
+       lpeversion="1"
+       nodesatellites_param="F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1"
+       radius="0"
+       unit="px"
+       method="auto"
+       mode="F"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+    <inkscape:path-effect
+       effect="powerstroke"
+       id="path-effect25"
+       is_visible="true"
+       lpeversion="1.3"
+       scale_width="1"
+       interpolator_type="CentripetalCatmullRom"
+       interpolator_beta="0.75"
+       start_linecap_type="round"
+       end_linecap_type="round"
+       offset_points="0.15241253,0.0014616302"
+       linejoin_type="spiro"
+       miter_limit="4"
+       not_jump="true"
+       sort_points="true"
+       message="&lt;b&gt;Ctrl + click&lt;/b&gt; on existing node and move it" />
+    <inkscape:path-effect
+       effect="powerstroke"
+       id="path-effect24"
+       is_visible="true"
+       lpeversion="1.3"
+       scale_width="1"
+       interpolator_type="CentripetalCatmullRom"
+       interpolator_beta="0.75"
+       start_linecap_type="round"
+       end_linecap_type="round"
+       offset_points="0.38582602,0.0014616302"
+       linejoin_type="spiro"
+       miter_limit="4"
+       not_jump="true"
+       sort_points="true"
+       message="&lt;b&gt;Ctrl + click&lt;/b&gt; on existing node and move it" />
+    <inkscape:path-effect
+       effect="powerstroke"
+       id="path-effect23"
+       is_visible="true"
+       lpeversion="1.3"
+       scale_width="1"
+       interpolator_type="CentripetalCatmullRom"
+       interpolator_beta="0.75"
+       start_linecap_type="round"
+       end_linecap_type="round"
+       offset_points="0.62645463,0.0014616302"
+       linejoin_type="spiro"
+       miter_limit="4"
+       not_jump="true"
+       sort_points="true"
+       message="&lt;b&gt;Ctrl + click&lt;/b&gt; on existing node and move it" />
+    <inkscape:path-effect
+       effect="powerstroke"
+       id="path-effect22"
+       is_visible="true"
+       lpeversion="1.3"
+       scale_width="1"
+       interpolator_type="CentripetalCatmullRom"
+       interpolator_beta="0.75"
+       start_linecap_type="round"
+       end_linecap_type="round"
+       offset_points="0.38875258,0.0014616302"
+       linejoin_type="spiro"
+       miter_limit="4"
+       not_jump="true"
+       sort_points="true"
+       message="&lt;b&gt;Ctrl + click&lt;/b&gt; on existing node and move it" />
+    <inkscape:path-effect
+       effect="powerstroke"
+       id="path-effect21"
+       is_visible="true"
+       lpeversion="1.3"
+       scale_width="1"
+       interpolator_type="CentripetalCatmullRom"
+       interpolator_beta="0.75"
+       start_linecap_type="round"
+       end_linecap_type="round"
+       offset_points="0.5,0.0019488403"
+       linejoin_type="spiro"
+       miter_limit="4"
+       not_jump="true"
+       sort_points="true"
+       message="&lt;b&gt;Ctrl + click&lt;/b&gt; on existing node and move it" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient10"
+       id="linearGradient9"
+       x1="144.34694"
+       y1="202.94681"
+       x2="94.707207"
+       y2="118.4976"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-5.0171128e-5,2.5062482e-5)" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="matrix(0.99122866,0,0,0.9947139,0.60332678,0.36880001)"
+     style="display:inline">
+    <path
+       id="path136"
+       style="opacity:1;mix-blend-mode:normal;fill:url(#linearGradient9);fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.402832;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+       inkscape:label="car"
+       d="m 105.32022,124.28165 a 14.752201,9.2222385 0 0 0 -14.75176,9.22235 14.752201,9.2222385 0 0 0 1.772546,4.35298 v 0.86498 l -1.648989,0.70654 0.410292,0.95018 1.238697,-0.53094 v 19.40268 c -0.849161,1.33505 -1.483204,3.04899 -1.483204,5.20082 0,2.54164 0.884776,4.45052 1.964398,5.84294 a 13.399185,8.2521372 0 0 0 3.655095,3.26096 h 17.660815 a 13.399185,8.2521372 0 0 0 3.54822,-3.07446 c 1.13876,-1.40716 2.0963,-3.36577 2.0963,-6.01177 0,-2.15373 -0.6338,-3.87006 -1.4832,-5.20706 v -19.41411 l 1.23921,0.53094 0.40977,-0.95018 -1.64898,-0.70654 v -0.86446 a 14.752201,9.2222385 0 0 0 1.77306,-4.3535 14.752201,9.2222385 0 0 0 -14.75227,-9.22235 z"
+       inkscape:transform-center-x="-0.93544338"
+       inkscape:transform-center-y="-1.1225321" />
+    <g
+       id="g94"
+       inkscape:label="windows">
+      <path
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.61583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+         d="m 114.0716,145.1716 v 9.51566 l 2.67473,2.61681 v -16.77135 l -2.07522,2.67628 z"
+         id="path28-1-9"
+         inkscape:label="left window" />
+      <path
+         id="path27"
+         style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.60971;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+         d="m 104.94327,135.65434 a 16.058491,3.9707356 0 0 0 -10.742998,1.03016 l 6.134768,6.73809 a 16.058491,3.9707356 0 0 0 4.60823,0.17323 16.058491,3.9707356 0 0 0 5.27593,-0.22944 l 6.22148,-6.51199 a 16.058491,3.9707356 0 0 0 -11.49741,-1.20005 z"
+         inkscape:label="front window" />
+      <path
+         id="path27-0"
+         style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.453776;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+         d="m 104.99116,162.2604 a 14.019396,2.5193101 0 0 1 -9.37885,-0.6536 l 5.35577,-4.27512 a 14.019396,2.5193101 0 0 1 4.02308,-0.1099 14.019396,2.5193101 0 0 1 4.60599,0.14558 l 5.43149,4.13165 a 14.019396,2.5193101 0 0 1 -10.03748,0.76139 z"
+         inkscape:label="rear window" />
+      <path
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.61583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+         d="m 96.569353,145.1716 v 9.51566 l -2.674729,2.61681 v -16.77135 l 2.07522,2.67628 z"
+         id="path28-1"
+         inkscape:label="left window" />
+    </g>
+    <g
+       id="g74-0"
+       inkscape:label="rear lights"
+       transform="translate(-0.00111759,0.26417117)">
+      <path
+         d="m 102.94429,173.37147 a 2.9727211,1.9748703 0 0 0 -2.962234,-1.83439 2.9727211,1.9748703 0 0 0 -2.768821,1.29877 v 0.53562 z"
+         style="opacity:1;vector-effect:none;stroke-width:0.553894;stroke-linecap:round;stroke-linejoin:round"
+         id="path91"
+         inkscape:label="left rear light" />
+      <path
+         d="m 113.42995,172.80209 a 2.9727211,1.9748703 0 0 0 -2.77091,-1.26501 2.9727211,1.9748703 0 0 0 -2.94503,1.83439 h 5.71594 z"
+         style="vector-effect:none;stroke-width:0.553894;stroke-linecap:round;stroke-linejoin:round"
+         id="path89"
+         inkscape:label="right rear light" />
+    </g>
+    <g
+       id="g73-7"
+       inkscape:label="front lights"
+       transform="translate(-0.00422868,0.00482033)">
+      <path
+         d="m 99.933036,124.7946 a 14.752201,9.2222385 0 0 0 -5.337971,2.26351 c 0.495271,0.77121 1.765214,1.15332 3.125416,0.8681 1.606696,-0.33676 2.726609,-1.47511 2.501369,-2.54248 -0.0461,-0.21808 -0.14726,-0.41461 -0.288814,-0.58913 z"
+         style="vector-effect:none;stroke-width:0.553894;stroke-linecap:round;stroke-linejoin:round"
+         id="path76"
+         inkscape:label="left front light" />
+      <path
+         d="m 110.71324,124.78785 c -0.14451,0.17615 -0.24735,0.37498 -0.29403,0.59588 -0.22524,1.06737 0.89468,2.20572 2.50137,2.54248 1.36791,0.28684 2.64457,-0.10107 3.13376,-0.88109 a 14.752201,9.2222385 0 0 0 -5.3411,-2.25727 z"
+         style="vector-effect:none;stroke-width:0.553894;stroke-linecap:round;stroke-linejoin:round"
+         id="path78"
+         inkscape:label="right front light" />
+    </g>
+  </g>
+</svg>

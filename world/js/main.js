@@ -1,20 +1,20 @@
-import Graph from "./js/math/graph.js";
-import World from "./js/world.js";
-import GraphEditor from "./js/editors/graphEditor/graphEditor.js";
-import Viewport from "./js/viewport.js";
-import RoadGeneratorAndDrawer from "./js/world/roadGeneratorAndDrawer.js";
-import BuildingGeneratorAndDrawer from "./js/world/buildingGeneratorAndDrawer.js";
-import TreeGeneratorAndDrawer from "./js/world/treeGeneratorAndDrawer.js";
-import { scale } from "./js/math/utils.js";
-import StopEditor from "./js/editors/markingEditors/stopEditor.js";
-import GraphEditorEvents from "./js/editors/graphEditor/graphEditorEvents.js";
-import LaneGuidesGeneratorAndDrawer from "./js/world/laneGuidesGeneratorAndDrawer.js";
-import CrossingEditor from "./js/editors/markingEditors/crossingEditor.js";
-import StartEditor from "./js/editors/markingEditors/startEditor.js";
-import YieldEditor from "./js/editors/markingEditors/yieldEditor.js";
-import ParkingEditor from "./js/editors/markingEditors/parkingEditor.js";
-import LightEditor from "./js/editors/markingEditors/lightEditor.js";
-import TargetEditor from "./js/editors/markingEditors/targetEditor.js";
+import Graph from "./math/graph.js";
+import World from "./world.js";
+import GraphEditor from "./editors/graphEditor/graphEditor.js";
+import Viewport from "./viewport.js";
+import RoadGeneratorAndDrawer from "./world/roadGeneratorAndDrawer.js";
+import BuildingGeneratorAndDrawer from "./world/buildingGeneratorAndDrawer.js";
+import TreeGeneratorAndDrawer from "./world/treeGeneratorAndDrawer.js";
+import { scale } from "./math/utils.js";
+import StopEditor from "./editors/markingEditors/stopEditor.js";
+import GraphEditorEvents from "./editors/graphEditor/graphEditorEvents.js";
+import LaneGuidesGeneratorAndDrawer from "./world/laneGuidesGeneratorAndDrawer.js";
+import CrossingEditor from "./editors/markingEditors/crossingEditor.js";
+import StartEditor from "./editors/markingEditors/startEditor.js";
+import YieldEditor from "./editors/markingEditors/yieldEditor.js";
+import ParkingEditor from "./editors/markingEditors/parkingEditor.js";
+import LightEditor from "./editors/markingEditors/lightEditor.js";
+import TargetEditor from "./editors/markingEditors/targetEditor.js";
 
 globalThis.load = load;
 

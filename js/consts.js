@@ -1,16 +1,10 @@
-export const MOUSE_LEFT_BUTTON = 0;
-export const MOUSE_MIDDLE_BUTTON = 1;
-export const MOUSE_RIGHT_BUTTON = 2;
+/** @typedef {DIR_I_UP | DIR_I_DOWN | DIR_I_LEFT | DIR_I_RIGHT} DIR_INDICES */
 
-export const TRAFFIC_LIGHT_OFF = 'o';
-export const TRAFFIC_LIGHT_RED = 'r';
-export const TRAFFIC_LIGHT_YELLOW = 'y';
-export const TRAFFIC_LIGHT_GREEN = 'g';
+export const DIR_I_UP = 0;
+export const DIR_I_DOWN = 1;
+export const DIR_I_LEFT = 2;
+export const DIR_I_RIGHT = 3;
 
-export const MARKING_STOP = 'stop';
-export const MARKING_YIELD = 'yield';
-export const MARKING_CROSSING = 'crossing';
-export const MARKING_PARKING = 'parking';
-export const MARKING_LIGHT = 'light';
-export const MARKING_START = 'start';
-export const MARKING_TARGET = 'target';
+export const CONTROL_TYPE_KEYS = 0;
+export const CONTROL_TYPE_DUMMY = 1;
+export const CONTROL_TYPE_AI = 2;
