@@ -73,6 +73,8 @@ function animate() {
     }
     world.draw(viewport.ctx, scale(viewport.getOffset(), -1));
 
+    viewport.ctx.globalAlpha = 0.3
+
     Object.values(tools.editors)
         .forEach(e => e.editor.display());
 

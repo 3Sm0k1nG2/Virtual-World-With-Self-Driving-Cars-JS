@@ -16,7 +16,7 @@ class Start extends Marking {
         this.type = MARKING_START;
 
         this.img = new Image();
-        this.img.src = "car.png";
+        this.img.src = "./car.svg";
     }
 
     /** @param {CanvasRenderingContext2D} ctx */

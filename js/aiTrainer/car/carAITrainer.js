@@ -43,8 +43,16 @@ class CarAITrainer {
         }
     }
 
+    #updateBestCarByDistanceTraveled() {
+        for(let subjectId in this.subjects){
+            if(this.subjects[subjectId].object.distanceTraveled > this.bestSubject.object.distanceTraveled) {
+                this.bestSubject = this.subjects[subjectId];
+            }
+        }
+    }
+
     refreshBestSubject() {
-        this.#updateBestCarByY();
+        this.#updateBestCarByDistanceTraveled();
     }
 
     /**

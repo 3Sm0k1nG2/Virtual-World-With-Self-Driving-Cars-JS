@@ -1,16 +1,13 @@
 import Car from "./views/car/car.js";
 import { CONTROL_TYPE_DUMMY } from "./consts.js";
-import Road from "./views/car/road.js";
 import ColorGenerator from "./colorGenerator.js"
 
 class TrafficGenerator {
     /**
-     * @param {Road} road 
      * @param {number} levelHeight 
      * @param {ColorGenerator} colorGenerator 
      */
-    constructor(road, levelHeight = 50, colorGenerator) {
-        this.road = road;
+    constructor(levelHeight = 50, colorGenerator) {
         this.levelHeight = levelHeight;
         this.colorGenerator = colorGenerator;
     }
@@ -23,7 +20,7 @@ class TrafficGenerator {
      */
     #generateCar(levelHeight, laneIndex, color = undefined) {
         return new Car({
-            x: this.road.getLaneCenterByIndex(laneIndex),
+            x: levelHeight,
             y: levelHeight,
             width: 30,
             height: 50,

@@ -24,8 +24,8 @@ class StartEditor extends MarkingEditor {
         return new Start(
             center,
             directionVector,
-            this.world.roadGeneratorAndDrawer.roadWidth / 2,
-            this.world.roadGeneratorAndDrawer.roadWidth / 2,
+            this.world.roadGeneratorAndDrawer.roadWidth / 2 - 25,
+            this.world.roadGeneratorAndDrawer.roadWidth / 2 +25,
         )
     }
 }

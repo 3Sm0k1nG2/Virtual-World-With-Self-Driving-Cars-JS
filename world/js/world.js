@@ -12,6 +12,9 @@ import Building from "./items/building.js";
 import Tree from "./items/tree.js";
 import { TRAFFIC_LIGHT_GREEN, TRAFFIC_LIGHT_RED, TRAFFIC_LIGHT_YELLOW } from "./consts.js";
 import MarkingLoader from "./markingLoader.js";
+import Marking from "./markings/marking.js";
+import Car from "../../js/views/car/car.js";
+import Start from "./markings/start.js";
 
 class World {
     /**
@@ -36,12 +39,20 @@ class World {
 
         this.debug = false;
 
+        /** @type {Marking[]} */
         this.markings = [];
 
         this.frameCount = 0;
         
         this.zoom = 1;
         this.offset = null;
+
+        /** @type {Car[]} */
+        this.cars = [];
+        /** @type {Car} */
+        this.bestCar;
+
+        this.showStartMarkings = true;
 
         // this.generate();
     }
@@ -169,15 +180,21 @@ class World {
      * @param {Point} viewPoint
      */
     draw(ctx, viewPoint) {
+        
         this.#updateLights();
-
+        
         this.roadGeneratorAndDrawer.draw(ctx, this.debug);
-        this.markings.forEach(m => m.draw(ctx, viewPoint));
+        this.markings.forEach(m => {!(m instanceof Start) || this.showStartMarkings ? m.draw(ctx, viewPoint) : null});
         let items = [
             ...this.buildingGeneratorAndDrawer.buildings,
             ...this.treeGeneratorAndDrawer.trees,
         ];
-
+        
+        ctx.globalAlpha = 0.2;
+        this.cars.forEach(car => car.draw(ctx))
+        ctx.globalAlpha = 1;
+        this.bestCar?.draw(ctx, true);
+        
         items
             .sort((a, b) => b.base.distanceToPoint(viewPoint) - a.base.distanceToPoint(viewPoint))
             .forEach(item => item.draw(ctx, viewPoint));

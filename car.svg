@@ -2,8 +2,8 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="30mm"
-   height="50mm"
+   width="30px"
+   height="50px"
    viewBox="0 0 30 50"
    version="1.1"
    id="svg1"
@@ -23,7 +23,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
-     inkscape:document-units="mm"
+     inkscape:document-units="px"
      inkscape:zoom="1.4142136"
      inkscape:cx="-13.435029"
      inkscape:cy="136.11806"

@@ -20,6 +20,9 @@ class CarParams {
         this.x 
         /** @type {number} */
         this.y 
+
+        /** @type {number} */
+        this.angle
         
         /** @type {number} */
         this.width 
@@ -46,6 +49,9 @@ class Car {
 
         this.x = params.x;
         this.y = params.y;
+
+        this.angle = params.angle;
+
         this.width = params.width;
         this.height = params.height;
 
@@ -58,7 +64,8 @@ class Car {
         this.acceleration = 0.2;
         this.maxSpeed = params.maxSpeed;
         this.friction = 0.05;
-        this.angle = 0;
+
+        this.distanceTraveled = 0;
 
         this.useBrain = this.controlType === CONTROL_TYPE_AI;
 
@@ -148,6 +155,8 @@ class Car {
 
         this.x -= Math.sin(this.angle) * this.speed;
         this.y -= Math.cos(this.angle) * this.speed;
+
+        this.distanceTraveled += this.speed;
     }
 
     #updatePolygon() {
