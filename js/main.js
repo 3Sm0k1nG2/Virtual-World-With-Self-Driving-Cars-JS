@@ -84,7 +84,7 @@ const aiManager = new AIManager(
 );
 
 const carN = 100;
-const mutator = 0.15;
+const mutator = 0.2;
 
 const eventListenerModuleBuilder = new EventListenerModuleBuilder();
 eventListenerModuleBuilder.registerEvents(...Object.keys(carEventTypes));
@@ -221,6 +221,6 @@ function init(aiManager) {
         .addEventListener('click', (e) => { e.stopPropagation(); e.preventDefault() });
 
     if(autoTrain){
-        setTimeout(() => {aiManager.changeBrain(carAiTrainer.bestSubject.object.brain); aiManager.storeBestBrain(); location.reload()}, 10 * 1000)
-    }
+        setTimeout(() => {aiManager.changeBrain(carAiTrainer.bestSubject.object.brain); aiManager.storeBestBrain(); location.reload()}, 1 * 60 * 1000)
+    }0
 }

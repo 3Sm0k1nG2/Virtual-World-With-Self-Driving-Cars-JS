@@ -21,6 +21,7 @@
                 onchange="load(event)"
             />
         </label>
+        <button onclick="openOsmPanel()">OSM</button>
         &nbsp;
         <button id="graphBtn" onclick="setMode('graph')">Graph</button>
         <button id="stopBtn" onclick="setMode('stop')">Stop</button>
@@ -30,6 +31,19 @@
         <button id="lightBtn" onclick="setMode('light')">Light</button>
         <button id="startBtn" onclick="setMode('start')">Start</button>
         <button id="targetBtn" onclick="setMode('target')">Target</button>
+    
+        <div id="osmPanel" style="display: none;">
+            <textarea 
+                id="osmDataContainer"
+                cols="50"
+                rows="10"
+                placeholder="Paste OSM data here"
+            ></textarea>
+            <div>
+                <button onclick="parseOsmData()">Parse</button>
+                <button onclick="closeOsmData()">Close</button>
+            </div>
+        </div>
     </div>
 
     <script src="js/main.js" type="module"></script>

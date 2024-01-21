@@ -178,8 +178,9 @@ class World {
     /** 
      * @param {CanvasRenderingContext2D} ctx
      * @param {Point} viewPoint
+     * @param {number} renderRadius
      */
-    draw(ctx, viewPoint) {
+    draw(ctx, viewPoint, renderRadius = 1000) {
         
         this.#updateLights();
         
@@ -196,6 +197,7 @@ class World {
         this.bestCar?.draw(ctx, true);
         
         items
+            .filter(i => i.base.distanceToPoint(viewPoint) < renderRadius)
             .sort((a, b) => b.base.distanceToPoint(viewPoint) - a.base.distanceToPoint(viewPoint))
             .forEach(item => item.draw(ctx, viewPoint));
     }

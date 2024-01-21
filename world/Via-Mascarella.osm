@@ -1,0 +1,3670 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.61.5 4133829e",
+  "osm3s": {
+    "timestamp_osm_base": "2024-01-21T07:58:25Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "way",
+  "id": 23452971,
+  "nodes": [
+    258315309,
+    11018535806,
+    7954518439,
+    6394987070,
+    6379885260,
+    8991334971,
+    2477675728,
+    253994841,
+    253994840,
+    11018504383,
+    11018535670,
+    253994839,
+    3464977005,
+    253994838,
+    253994837,
+    11018535725,
+    11018535730,
+    253994836,
+    11018535729,
+    253994835,
+    253994834,
+    253994833,
+    253994832,
+    11018535731,
+    253994831,
+    11084127444,
+    11018535732,
+    253994830,
+    11084127443,
+    253994828,
+    11084127442,
+    253994826,
+    253994825,
+    11084127451,
+    11084127441,
+    410722200
+  ],
+  "tags": {
+    "highway": "residential",
+    "lit": "yes",
+    "maxspeed": "30",
+    "name": "Via Paolo Fabbri",
+    "old_name": "Via Tripoli",
+    "oneway": "yes",
+    "surface": "asphalt",
+    "zone:maxspeed": "IT:30"
+  }
+},
+{
+  "type": "way",
+  "id": 23452985,
+  "nodes": [
+    253994923,
+    253995026,
+    541551580,
+    11084127627
+  ],
+  "tags": {
+    "cycleway:both": "separate",
+    "highway": "secondary",
+    "maxspeed": "30",
+    "name": "Via San Donato",
+    "oneway": "yes",
+    "sidewalk:both": "separate",
+    "source:maxspeed": "https://wiki.osm.org/?curid=306950",
+    "surface": "asphalt",
+    "width": "4.36"
+  }
+},
+{
+  "type": "way",
+  "id": 23453044,
+  "nodes": [
+    253995679,
+    269336818,
+    11381162859,
+    10951967643,
+    1753903949,
+    10951967644,
+    253995676,
+    1753903952,
+    3433695946,
+    1753903956,
+    2714345010,
+    253995672,
+    1753903934,
+    10951967645,
+    4828458739,
+    1753903955,
+    5845666461,
+    5845666459,
+    541551593,
+    1753903935,
+    253995785,
+    253995784,
+    253995783,
+    3752026557,
+    253995782,
+    521764091,
+    7974893349,
+    387533929
+  ],
+  "tags": {
+    "cycleway:right": "separate",
+    "highway": "secondary",
+    "lanes": "1",
+    "maxspeed": "30",
+    "name": "Via Camillo Ranzani",
+    "name:etymology:wikidata": "Q2935140",
+    "oneway": "yes",
+    "sidewalk:both": "separate",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 23510982,
+  "nodes": [
+    253891975,
+    11018535860,
+    11018504369,
+    283603891,
+    11016419070,
+    283603886
+  ],
+  "tags": {
+    "highway": "residential",
+    "lit": "yes",
+    "maxspeed": "30",
+    "name": "Via Giuseppe Bentivogli",
+    "oneway": "yes",
+    "sidewalk": "both",
+    "surface": "asphalt",
+    "zone:maxspeed": "IT:30"
+  }
+},
+{
+  "type": "way",
+  "id": 23621943,
+  "nodes": [
+    255617190,
+    8480942108,
+    11076849029,
+    11076849028,
+    255617191,
+    3241773379,
+    2247044979,
+    3241773360,
+    11076848968,
+    255617192,
+    11076849026,
+    11076849407,
+    11076849027,
+    11076849118,
+    255614771,
+    11010622503,
+    11076836896,
+    11076836890,
+    255614774,
+    10260186946,
+    255615599,
+    739659669,
+    10260179703,
+    10260179704,
+    255617497
+  ],
+  "tags": {
+    "highway": "residential",
+    "maxspeed": "30",
+    "name": "Via della Torretta",
+    "oneway": "no"
+  }
+},
+{
+  "type": "way",
+  "id": 24260996,
+  "nodes": [
+    251884979,
+    2351206390,
+    2351206391,
+    2351206392,
+    251885176,
+    251885175,
+    2351206397,
+    253822457,
+    2351206398,
+    2351206400,
+    2351206401,
+    2351206404,
+    251884980
+  ],
+  "tags": {
+    "bridge": "yes",
+    "highway": "secondary",
+    "lanes": "3",
+    "lanes:backward": "1",
+    "lanes:forward": "2",
+    "layer": "1",
+    "maxspeed": "30",
+    "maxweight:signed": "no",
+    "name": "Via San Donato",
+    "shoulder": "no",
+    "source:maxspeed": "https://wiki.osm.org/?curid=306950",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 24589436,
+  "nodes": [
+    4847809361,
+    2714351569,
+    2714351554,
+    2474206472,
+    283455453,
+    253891961
+  ],
+  "tags": {
+    "bridge": "yes",
+    "cycleway:both": "no",
+    "highway": "secondary",
+    "lanes": "2",
+    "layer": "2",
+    "lit": "yes",
+    "maxspeed": "30",
+    "maxweight": "15",
+    "name": "Via Libia",
+    "oneway": "no",
+    "sidewalk": "both",
+    "surface": "asphalt",
+    "zone:maxspeed": "IT:30"
+  }
+},
+{
+  "type": "way",
+  "id": 25983186,
+  "nodes": [
+    258315309,
+    11018535809,
+    3464977006,
+    366287654,
+    3464977906,
+    11018535864,
+    11018535865,
+    253891975
+  ],
+  "tags": {
+    "cycleway:both": "no",
+    "highway": "tertiary",
+    "lit": "yes",
+    "maxspeed": "30",
+    "name": "Via Gastone Rossi",
+    "old_name": "Via Rodi",
+    "sidewalk": "both",
+    "surface": "asphalt",
+    "zone:maxspeed": "IT:30"
+  }
+},
+{
+  "type": "way",
+  "id": 32565989,
+  "nodes": [
+    258315309,
+    11018535807,
+    11016595912,
+    11016418932,
+    11016387750
+  ],
+  "tags": {
+    "cycleway:both": "no",
+    "highway": "residential",
+    "lit": "yes",
+    "maxspeed": "30",
+    "name": "Via Paolo Fabbri",
+    "old_name": "Via Tripoli",
+    "oneway": "yes",
+    "sidewalk": "both",
+    "surface": "asphalt",
+    "zone:maxspeed": "IT:30"
+  }
+},
+{
+  "type": "way",
+  "id": 32566032,
+  "nodes": [
+    253891975,
+    11016419069,
+    3464895965,
+    11016418907,
+    258315305
+  ],
+  "tags": {
+    "cycleway:both": "no",
+    "highway": "tertiary",
+    "lit": "yes",
+    "maxspeed": "30",
+    "name": "Via Giuseppe Bentivogli",
+    "old_name": "Via Bengasi",
+    "surface": "asphalt",
+    "zone:maxspeed": "IT:30"
+  }
+},
+{
+  "type": "way",
+  "id": 32566033,
+  "nodes": [
+    258314849,
+    11016419079,
+    11018535863,
+    253891975
+  ],
+  "tags": {
+    "highway": "residential",
+    "lit": "yes",
+    "maxspeed": "30",
+    "name": "Via Gastone Rossi",
+    "old_name": "via Rodi",
+    "oneway": "yes",
+    "sidewalk": "both",
+    "surface": "asphalt",
+    "zone:maxspeed": "IT:30"
+  }
+},
+{
+  "type": "way",
+  "id": 32566108,
+  "nodes": [
+    366287654,
+    2714349728,
+    11016418905,
+    366287825
+  ],
+  "tags": {
+    "cycleway:both": "no",
+    "highway": "residential",
+    "lit": "yes",
+    "maxspeed": "30",
+    "name": "Via Edmondo De Amicis",
+    "oneway": "yes",
+    "surface": "asphalt",
+    "zone:maxspeed": "IT:30"
+  }
+},
+{
+  "type": "way",
+  "id": 33831603,
+  "nodes": [
+    387533929,
+    1753903947,
+    1753903938,
+    4828786096,
+    4828786097,
+    387533931,
+    4828807822,
+    4828807825,
+    2714345012,
+    4828786092,
+    4828786095,
+    1753903932,
+    2714345018
+  ],
+  "tags": {
+    "highway": "residential",
+    "lit": "yes",
+    "maxspeed": "30",
+    "name": "Via Camillo Ranzani",
+    "name:etymology:wikidata": "Q2935140",
+    "oneway": "yes",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 35016111,
+  "nodes": [
+    410723041,
+    5844470743,
+    541551479,
+    410723101,
+    410723131,
+    10873834814,
+    251064723
+  ],
+  "tags": {
+    "highway": "residential",
+    "lanes": "3",
+    "lit": "yes",
+    "maxspeed": "30",
+    "maxspeed:type": "IT:urban",
+    "name": "Via Faustino Malaguti",
+    "oneway": "no",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 35016192,
+  "nodes": [
+    513916617,
+    410723048,
+    410723049,
+    513916655,
+    410723051,
+    513916669,
+    513916675,
+    410723040,
+    410723041
+  ],
+  "tags": {
+    "highway": "residential",
+    "junction": "roundabout",
+    "lit": "yes",
+    "maxspeed": "30",
+    "name": "Rotonda Pietro Gherardini",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 35016201,
+  "nodes": [
+    410723101,
+    541551468,
+    410723116
+  ],
+  "tags": {
+    "cycleway:both": "no",
+    "highway": "residential",
+    "maxspeed": "30",
+    "maxspeed:type": "IT:urban",
+    "name": "Via Faustino Malaguti",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 35016269,
+  "nodes": [
+    4193307156,
+    3182706352,
+    410723413,
+    2921257845,
+    3182706339,
+    3182706340,
+    7486333362,
+    4477430810,
+    5844470742,
+    410723044
+  ],
+  "tags": {
+    "highway": "residential",
+    "lanes": "2",
+    "lit": "yes",
+    "maxspeed": "30",
+    "name": "Via Antonio Zanolini",
+    "oneway": "no",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 38580052,
+  "nodes": [
+    513916617,
+    257609515,
+    456990668,
+    2395184848,
+    456990669,
+    456990671,
+    1551062945,
+    4487534266,
+    1062598501,
+    11390356025
+  ],
+  "tags": {
+    "busway": "opposite_lane",
+    "cycleway:left": "share_busway",
+    "highway": "residential",
+    "lit": "yes",
+    "maxspeed": "30",
+    "name": "Via Enrico Berlinguer",
+    "oneway": "yes",
+    "oneway:bicycle": "no",
+    "oneway:psv": "no",
+    "sidewalk": "both",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 43205393,
+  "nodes": [
+    8763965550,
+    541551529,
+    8763965552,
+    541551544,
+    8763965553,
+    541551539,
+    8763965554,
+    1753903946,
+    8763965555,
+    253995679,
+    541551512,
+    541551505,
+    251884978
+  ],
+  "tags": {
+    "cycleway:right": "no",
+    "highway": "secondary",
+    "junction": "roundabout",
+    "lane_markings": "no",
+    "maxspeed": "30",
+    "name": "Rotonda Sant'Egidio",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate",
+    "surface": "asphalt",
+    "width": "8"
+  }
+},
+{
+  "type": "way",
+  "id": 46609624,
+  "nodes": [
+    283603886,
+    11018504384,
+    283455378,
+    11018535877,
+    11018535880,
+    11018504370,
+    11018504371,
+    11018504372,
+    11018535879,
+    11018504373,
+    11018504374,
+    258314849
+  ],
+  "tags": {
+    "highway": "residential",
+    "lit": "yes",
+    "maxspeed": "30",
+    "name": "Via Francesco Sabatucci",
+    "oneway": "yes",
+    "surface": "asphalt",
+    "zone:maxspeed": "IT:30"
+  }
+},
+{
+  "type": "way",
+  "id": 46609625,
+  "nodes": [
+    283603886,
+    11018504380,
+    11018504382,
+    11018504381,
+    595672217,
+    8991334974,
+    8991334965,
+    253994840
+  ],
+  "tags": {
+    "highway": "residential",
+    "lit": "yes",
+    "maxspeed": "30",
+    "name": "Via Francesco Sabatucci",
+    "oneway": "yes",
+    "sidewalk:both": "separate",
+    "surface": "asphalt",
+    "zone:maxspeed": "IT:30"
+  }
+},
+{
+  "type": "way",
+  "id": 53238687,
+  "nodes": [
+    255617249,
+    2247044980,
+    673756972
+  ],
+  "tags": {
+    "highway": "residential",
+    "maxspeed": "30",
+    "name": "Via della Concordia",
+    "oneway": "yes",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 53238688,
+  "nodes": [
+    537752800,
+    10965051003,
+    673756979,
+    673756982,
+    11010622501,
+    673756972
+  ],
+  "tags": {
+    "highway": "residential",
+    "maxspeed": "30",
+    "name": "Via della Concordia",
+    "oneway": "yes",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 53238689,
+  "nodes": [
+    673756972,
+    11010622502,
+    255617187
+  ],
+  "tags": {
+    "highway": "residential",
+    "maxspeed": "30",
+    "name": "Via Giuseppe Tartini",
+    "oneway": "yes",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 53238690,
+  "nodes": [
+    673756972,
+    673756989,
+    673756907,
+    673756936,
+    673756924,
+    11299531124,
+    673756943
+  ],
+  "tags": {
+    "highway": "residential",
+    "maxspeed": "30",
+    "name": "Via Giuseppe Tartini",
+    "oneway": "yes",
+    "sidewalk": "both",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 171597938,
+  "nodes": [
+    8730499949,
+    3099739361,
+    11084127621,
+    9675044085,
+    253456557
+  ],
+  "tags": {
+    "cycleway:both": "no",
+    "highway": "residential",
+    "lit": "yes",
+    "maxspeed": "30",
+    "name": "Via Giorgio Cencetti",
+    "sidewalk": "both",
+    "surface": "asphalt",
+    "zone:maxspeed": "IT:30"
+  }
+},
+{
+  "type": "way",
+  "id": 171933237,
+  "nodes": [
+    257366497,
+    2247044982,
+    255617246,
+    257366590,
+    255617248,
+    11010622499,
+    11010622500,
+    2247044981,
+    255617249
+  ],
+  "tags": {
+    "highway": "residential",
+    "lit": "yes",
+    "maxspeed": "30",
+    "name": "Via Vezza",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 231111018,
+  "nodes": [
+    251884924,
+    11381162820,
+    11381162830,
+    5845666455,
+    11381162843,
+    11381162842,
+    2714349730,
+    447731909,
+    11381162839,
+    11084127668,
+    11381162851,
+    2444944928
+  ],
+  "tags": {
+    "cycleway": "separate",
+    "highway": "secondary",
+    "lanes": "1",
+    "lit": "yes",
+    "maxspeed": "30",
+    "name": "Via San Donato",
+    "oneway": "yes",
+    "oneway:bicycle": "no",
+    "oneway:psv": "no",
+    "sidewalk:both": "separate",
+    "source:maxspeed": "https://wiki.osm.org/?curid=306950",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 268468839,
+  "nodes": [
+    410721515,
+    253995189,
+    11084127566,
+    253995190,
+    11084127565,
+    11084127567,
+    253995191,
+    11084127564,
+    253995192,
+    2714349727,
+    3464978302,
+    11084127563,
+    2714349733,
+    11084127562,
+    253995195,
+    6379885262,
+    11018535744,
+    2691157200,
+    253995196,
+    11016419058,
+    11016419057,
+    11018535804,
+    253995197,
+    11084127525,
+    11016419056,
+    253996022,
+    11016419055,
+    253995199,
+    11018535803,
+    11018535805,
+    258315309
+  ],
+  "tags": {
+    "highway": "tertiary",
+    "lit": "yes",
+    "maxspeed": "30",
+    "name": "Via Ilio Barontini",
+    "oneway": "yes",
+    "surface": "asphalt",
+    "zone:maxspeed": "IT:30"
+  }
+},
+{
+  "type": "way",
+  "id": 299421423,
+  "nodes": [
+    253996026,
+    11016387766,
+    253996024,
+    11016387767,
+    11018535802,
+    2714349735,
+    253996022
+  ],
+  "tags": {
+    "cycleway:both": "no",
+    "highway": "residential",
+    "lit": "yes",
+    "maxspeed": "30",
+    "name": "Via Oreste Regnoli",
+    "oneway": "yes",
+    "sidewalk": "both",
+    "surface": "asphalt",
+    "zone:maxspeed": "IT:30"
+  }
+},
+{
+  "type": "way",
+  "id": 393164344,
+  "nodes": [
+    8107940516,
+    4847809361
+  ],
+  "tags": {
+    "bridge": "yes",
+    "cycleway:both": "no",
+    "highway": "secondary",
+    "lanes": "2",
+    "layer": "1",
+    "lit": "yes",
+    "maxspeed": "30",
+    "maxweight": "15",
+    "name": "Via Libia",
+    "oneway": "no",
+    "sidewalk": "both",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 398045533,
+  "nodes": [
+    1825999090,
+    4008227050
+  ],
+  "tags": {
+    "bicycle": "designated",
+    "highway": "residential",
+    "maxspeed": "30",
+    "motor_vehicle": "no",
+    "motorcycle": "designated",
+    "name": "Via Giorgio Cencetti",
+    "sidewalk": "no",
+    "surface": "asphalt",
+    "zone:maxspeed": "IT:30"
+  }
+},
+{
+  "type": "way",
+  "id": 451949229,
+  "nodes": [
+    4487534268,
+    4487534267
+  ],
+  "tags": {
+    "bus": "yes",
+    "highway": "platform",
+    "name": "Sant'Egidio",
+    "network": "TPER",
+    "network:wikidata": "Q3997843",
+    "network:wikipedia": "it:Trasporto Passeggeri Emilia-Romagna",
+    "operator": "TPER",
+    "public_transport": "platform",
+    "ref": "3007",
+    "shelter": "yes",
+    "source": "http://www.tper.it/azienda/tper-open-data"
+  }
+},
+{
+  "type": "way",
+  "id": 451949231,
+  "nodes": [
+    4487534307,
+    4487534306
+  ],
+  "tags": {
+    "bench": "yes",
+    "bus": "yes",
+    "highway": "platform",
+    "name": "Sant'Egidio",
+    "network": "TPER",
+    "network:wikidata": "Q3997843",
+    "network:wikipedia": "it:Trasporto Passeggeri Emilia-Romagna",
+    "operator": "TPER",
+    "public_transport": "platform",
+    "ref": "3004",
+    "shelter": "yes",
+    "source": "http://www.tper.it/azienda/tper-open-data"
+  }
+},
+{
+  "type": "way",
+  "id": 454704820,
+  "nodes": [
+    4512392380,
+    4512392379
+  ],
+  "tags": {
+    "bus": "yes",
+    "highway": "platform",
+    "name": "Masia",
+    "network": "TPER",
+    "network:wikidata": "Q3997843",
+    "network:wikipedia": "it:Trasporto Passeggeri Emilia-Romagna",
+    "operator": "TPER",
+    "public_transport": "platform",
+    "ref": "2201",
+    "source": "http://www.tper.it/azienda/tper-open-data"
+  }
+},
+{
+  "type": "way",
+  "id": 454704821,
+  "nodes": [
+    4512392383,
+    4512392382
+  ],
+  "tags": {
+    "bus": "yes",
+    "highway": "platform",
+    "name": "Rossi",
+    "network": "TPER",
+    "network:wikidata": "Q3997843",
+    "network:wikipedia": "it:Trasporto Passeggeri Emilia-Romagna",
+    "operator": "TPER",
+    "public_transport": "platform",
+    "ref": "3154",
+    "source": "http://www.tper.it/azienda/tper-open-data"
+  }
+},
+{
+  "type": "way",
+  "id": 454704822,
+  "nodes": [
+    4512394258,
+    4512392385
+  ],
+  "tags": {
+    "bus": "yes",
+    "highway": "platform",
+    "name": "Rossi",
+    "network": "TPER",
+    "network:wikidata": "Q3997843",
+    "network:wikipedia": "it:Trasporto Passeggeri Emilia-Romagna",
+    "operator": "TPER",
+    "public_transport": "platform",
+    "ref": "3153",
+    "source": "http://www.tper.it/azienda/tper-open-data"
+  }
+},
+{
+  "type": "way",
+  "id": 454704823,
+  "nodes": [
+    4512394261,
+    4512394260
+  ],
+  "tags": {
+    "bench": "no",
+    "bin": "yes",
+    "bus": "yes",
+    "highway": "platform",
+    "name": "Cavalcavia San Donato",
+    "network": "TPER",
+    "network:wikidata": "Q3997843",
+    "network:wikipedia": "it:Trasporto Passeggeri Emilia-Romagna",
+    "operator": "TPER",
+    "public_transport": "platform",
+    "ref": "3152",
+    "shelter": "no",
+    "source": "http://www.tper.it/azienda/tper-open-data",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "way",
+  "id": 454704824,
+  "nodes": [
+    4512394264,
+    4512394263
+  ],
+  "tags": {
+    "bus": "yes",
+    "highway": "platform",
+    "name": "Cavalcavia San Donato",
+    "network": "TPER",
+    "network:wikidata": "Q3997843",
+    "network:wikipedia": "it:Trasporto Passeggeri Emilia-Romagna",
+    "operator": "TPER",
+    "public_transport": "platform",
+    "ref": "3151",
+    "source": "http://www.tper.it/azienda/tper-open-data"
+  }
+},
+{
+  "type": "way",
+  "id": 454704826,
+  "nodes": [
+    11084127636,
+    11084127625,
+    2351206389
+  ],
+  "tags": {
+    "cycleway:left": "separate",
+    "cycleway:right": "no",
+    "highway": "secondary",
+    "lanes": "3",
+    "lanes:backward": "2",
+    "lanes:forward": "1",
+    "maxspeed": "30",
+    "name": "Via San Donato",
+    "sidewalk:both": "separate",
+    "source:maxspeed": "https://wiki.osm.org/?curid=306950",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 479678071,
+  "nodes": [
+    541551522,
+    8763965561,
+    541551515,
+    8763965562,
+    541551557,
+    8763965563,
+    541551533,
+    253994923
+  ],
+  "tags": {
+    "cycleway:right": "no",
+    "highway": "secondary",
+    "junction": "roundabout",
+    "lane_markings": "no",
+    "maxspeed": "30",
+    "name": "Rotonda Sant'Egidio",
+    "sidewalk": "right",
+    "surface": "asphalt",
+    "width": "8"
+  }
+},
+{
+  "type": "way",
+  "id": 479678072,
+  "nodes": [
+    251884978,
+    8763965556,
+    541551509,
+    8763965557
+  ],
+  "tags": {
+    "cycleway:right": "no",
+    "highway": "secondary",
+    "junction": "roundabout",
+    "lane_markings": "no",
+    "maxspeed": "30",
+    "name": "Rotonda Sant'Egidio",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate",
+    "surface": "asphalt",
+    "width": "8"
+  }
+},
+{
+  "type": "way",
+  "id": 479678303,
+  "nodes": [
+    410723041,
+    410723042,
+    513916512,
+    410723043,
+    513916553,
+    410723044
+  ],
+  "tags": {
+    "highway": "residential",
+    "junction": "roundabout",
+    "lit": "yes",
+    "maxspeed": "30",
+    "name": "Rotonda Pietro Gherardini",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 479678304,
+  "nodes": [
+    410723044,
+    513916573,
+    410723045,
+    513916587,
+    410723046,
+    513916600,
+    410723047,
+    513916617
+  ],
+  "tags": {
+    "highway": "residential",
+    "junction": "roundabout",
+    "lit": "yes",
+    "maxspeed": "30",
+    "name": "Rotonda Pietro Gherardini",
+    "sidewalk": "right",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 912941751,
+  "nodes": [
+    3433695957,
+    2351206387,
+    11084127636
+  ],
+  "tags": {
+    "cycleway:left": "separate",
+    "cycleway:right": "no",
+    "highway": "secondary",
+    "lanes": "3",
+    "lanes:backward": "2",
+    "lanes:forward": "1",
+    "maxspeed": "30",
+    "name": "Via San Donato",
+    "sidewalk:both": "separate",
+    "source:maxspeed": "https://wiki.osm.org/?curid=306950",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 912952876,
+  "nodes": [
+    8480942105,
+    8480942106
+  ],
+  "tags": {
+    "highway": "residential"
+  }
+},
+{
+  "type": "way",
+  "id": 942811942,
+  "nodes": [
+    1825999090,
+    8730499949
+  ],
+  "tags": {
+    "bicycle": "designated",
+    "cycleway:both": "no",
+    "highway": "residential",
+    "lit": "yes",
+    "maxspeed": "30",
+    "motor_vehicle": "no",
+    "motorcycle": "designated",
+    "name": "Via Giorgio Cencetti",
+    "sidewalk": "both",
+    "surface": "asphalt",
+    "width": "4",
+    "zone:maxspeed": "IT:30"
+  }
+},
+{
+  "type": "way",
+  "id": 1192714015,
+  "nodes": [
+    255617249,
+    537752778,
+    255617187,
+    11076849034,
+    11076849031,
+    11076849032,
+    255617188,
+    11076849033,
+    255617189,
+    10965051002,
+    11071694403
+  ],
+  "tags": {
+    "highway": "residential",
+    "maxspeed": "30",
+    "name": "Via della Torretta",
+    "oneway": "no"
+  }
+},
+{
+  "type": "way",
+  "id": 1192714016,
+  "nodes": [
+    11071694403,
+    255617190
+  ],
+  "tags": {
+    "highway": "residential",
+    "maxspeed": "30",
+    "name": "Via della Torretta",
+    "oneway": "no",
+    "tunnel": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 1194069483,
+  "nodes": [
+    11084127627,
+    11084127628,
+    11084127629,
+    410721514,
+    11084127630,
+    11084127638,
+    410721515
+  ],
+  "tags": {
+    "highway": "tertiary",
+    "maxspeed": "30",
+    "name": "Via Ilio Barontini",
+    "oneway": "yes",
+    "sidewalk:both": "separate"
+  }
+},
+{
+  "type": "way",
+  "id": 1194069484,
+  "nodes": [
+    410722200,
+    11084127632,
+    11084127637,
+    11084127633,
+    11084127634,
+    11084127635,
+    11084127636
+  ],
+  "tags": {
+    "highway": "residential",
+    "maxspeed": "30",
+    "name": "Via Paolo Fabbri",
+    "oneway": "yes",
+    "sidewalk:both": "separate",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 1194069485,
+  "nodes": [
+    410722200,
+    11084127626,
+    11390356016,
+    11084127631,
+    410721515
+  ],
+  "tags": {
+    "highway": "residential",
+    "lit": "yes",
+    "maxspeed": "30",
+    "name": "Via Paolo Fabbri",
+    "old_name": "Via Tripoli",
+    "oneway": "yes",
+    "sidewalk:both": "separate",
+    "surface": "asphalt",
+    "zone:maxspeed": "IT:30"
+  }
+},
+{
+  "type": "way",
+  "id": 1226330391,
+  "nodes": [
+    2444944928,
+    11083824507,
+    11084127660,
+    11381162856,
+    253994946,
+    11084127658,
+    11084127659,
+    251884978
+  ],
+  "tags": {
+    "cycleway": "separate",
+    "highway": "secondary",
+    "lanes": "2",
+    "lanes:backward": "1",
+    "lanes:forward": "1",
+    "lit": "yes",
+    "maxspeed": "30",
+    "name": "Via San Donato",
+    "oneway": "no",
+    "sidewalk:both": "separate",
+    "source:maxspeed": "https://wiki.osm.org/?curid=306950",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 1227322419,
+  "nodes": [
+    3433695957,
+    11381162861,
+    11381162862,
+    8763965550
+  ],
+  "tags": {
+    "cycleway:both": "separate",
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "30",
+    "name": "Via San Donato",
+    "oneway": "yes",
+    "sidewalk:both": "separate",
+    "surface": "asphalt",
+    "width": "6.5"
+  }
+},
+{
+  "type": "way",
+  "id": 1227322420,
+  "nodes": [
+    11084127627,
+    3433695957
+  ],
+  "tags": {
+    "cycleway:both": "separate",
+    "highway": "secondary",
+    "lanes": "1",
+    "maxspeed": "30",
+    "name": "Via San Donato",
+    "oneway": "yes",
+    "sidewalk:both": "separate",
+    "source:maxspeed": "https://wiki.osm.org/?curid=306950",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 1227322421,
+  "nodes": [
+    253994923,
+    8763965550
+  ],
+  "tags": {
+    "cycleway:right": "no",
+    "highway": "secondary",
+    "junction": "roundabout",
+    "lane_markings": "no",
+    "maxspeed": "30",
+    "name": "Rotonda Sant'Egidio",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate",
+    "surface": "asphalt",
+    "width": "8"
+  }
+},
+{
+  "type": "way",
+  "id": 1228294707,
+  "nodes": [
+    8763965557,
+    541551519,
+    8763965558,
+    253994991,
+    8763965559,
+    541551526,
+    8763965560,
+    541551522
+  ],
+  "tags": {
+    "cycleway:right": "no",
+    "highway": "secondary",
+    "junction": "roundabout",
+    "lane_markings": "no",
+    "maxspeed": "30",
+    "name": "Rotonda Sant'Egidio",
+    "sidewalk:left": "no",
+    "sidewalk:right": "separate",
+    "surface": "asphalt",
+    "width": "8"
+  }
+},
+{
+  "type": "way",
+  "id": 1228294708,
+  "nodes": [
+    2351206389,
+    251884979
+  ],
+  "tags": {
+    "cycleway:left": "separate",
+    "cycleway:right": "no",
+    "highway": "secondary",
+    "lanes": "3",
+    "lanes:backward": "1",
+    "lanes:forward": "2",
+    "maxspeed": "30",
+    "name": "Via San Donato",
+    "sidewalk:both": "separate",
+    "source:maxspeed": "https://wiki.osm.org/?curid=306950",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 1228294709,
+  "nodes": [
+    11390356025,
+    11390356023,
+    11390356018,
+    11390356022,
+    11390356024,
+    541551522
+  ],
+  "tags": {
+    "cycleway": "separate",
+    "highway": "residential",
+    "lit": "yes",
+    "maxspeed": "30",
+    "name": "Via Enrico Berlinguer",
+    "oneway": "yes",
+    "sidewalk": "both",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "node",
+  "id": 251064723,
+  "lat": 44.4981997,
+  "lon": 11.3567365
+},
+{
+  "type": "node",
+  "id": 251884924,
+  "lat": 44.4985627,
+  "lon": 11.3566925
+},
+{
+  "type": "node",
+  "id": 251884978,
+  "lat": 44.4996296,
+  "lon": 11.3591992
+},
+{
+  "type": "node",
+  "id": 251884979,
+  "lat": 44.5000581,
+  "lon": 11.3599078
+},
+{
+  "type": "node",
+  "id": 251884980,
+  "lat": 44.5022760,
+  "lon": 11.3618365
+},
+{
+  "type": "node",
+  "id": 251885175,
+  "lat": 44.5014570,
+  "lon": 11.3610162
+},
+{
+  "type": "node",
+  "id": 251885176,
+  "lat": 44.5010195,
+  "lon": 11.3606753
+},
+{
+  "type": "node",
+  "id": 253456557,
+  "lat": 44.4969961,
+  "lon": 11.3603839
+},
+{
+  "type": "node",
+  "id": 253822457,
+  "lat": 44.5018487,
+  "lon": 11.3613161
+},
+{
+  "type": "node",
+  "id": 253891961,
+  "lat": 44.4975381,
+  "lon": 11.3656170
+},
+{
+  "type": "node",
+  "id": 253891975,
+  "lat": 44.4987609,
+  "lon": 11.3639548
+},
+{
+  "type": "node",
+  "id": 253994825,
+  "lat": 44.5000090,
+  "lon": 11.3600771
+},
+{
+  "type": "node",
+  "id": 253994826,
+  "lat": 44.5000413,
+  "lon": 11.3601050
+},
+{
+  "type": "node",
+  "id": 253994828,
+  "lat": 44.5002330,
+  "lon": 11.3602555
+},
+{
+  "type": "node",
+  "id": 253994830,
+  "lat": 44.5004920,
+  "lon": 11.3604608
+},
+{
+  "type": "node",
+  "id": 253994831,
+  "lat": 44.5005569,
+  "lon": 11.3605366
+},
+{
+  "type": "node",
+  "id": 253994832,
+  "lat": 44.5005853,
+  "lon": 11.3606311
+},
+{
+  "type": "node",
+  "id": 253994833,
+  "lat": 44.5006267,
+  "lon": 11.3608223
+},
+{
+  "type": "node",
+  "id": 253994834,
+  "lat": 44.5006552,
+  "lon": 11.3609748
+},
+{
+  "type": "node",
+  "id": 253994835,
+  "lat": 44.5006642,
+  "lon": 11.3610364
+},
+{
+  "type": "node",
+  "id": 253994836,
+  "lat": 44.5006635,
+  "lon": 11.3611484
+},
+{
+  "type": "node",
+  "id": 253994837,
+  "lat": 44.5006136,
+  "lon": 11.3612787
+},
+{
+  "type": "node",
+  "id": 253994838,
+  "lat": 44.5005421,
+  "lon": 11.3613818
+},
+{
+  "type": "node",
+  "id": 253994839,
+  "lat": 44.5000706,
+  "lon": 11.3620139
+},
+{
+  "type": "node",
+  "id": 253994840,
+  "lat": 44.4999976,
+  "lon": 11.3620596
+},
+{
+  "type": "node",
+  "id": 253994841,
+  "lat": 44.4999472,
+  "lon": 11.3620700
+},
+{
+  "type": "node",
+  "id": 253994923,
+  "lat": 44.4997057,
+  "lon": 11.3594196
+},
+{
+  "type": "node",
+  "id": 253994946,
+  "lat": 44.4995927,
+  "lon": 11.3590470
+},
+{
+  "type": "node",
+  "id": 253994991,
+  "lat": 44.4995686,
+  "lon": 11.3593183
+},
+{
+  "type": "node",
+  "id": 253995026,
+  "lat": 44.4997625,
+  "lon": 11.3595083
+},
+{
+  "type": "node",
+  "id": 253995189,
+  "lat": 44.4997983,
+  "lon": 11.3599313
+},
+{
+  "type": "node",
+  "id": 253995190,
+  "lat": 44.4997458,
+  "lon": 11.3600087
+},
+{
+  "type": "node",
+  "id": 253995191,
+  "lat": 44.4996500,
+  "lon": 11.3601097
+},
+{
+  "type": "node",
+  "id": 253995192,
+  "lat": 44.4995055,
+  "lon": 11.3602422
+},
+{
+  "type": "node",
+  "id": 253995195,
+  "lat": 44.4988340,
+  "lon": 11.3609623
+},
+{
+  "type": "node",
+  "id": 253995196,
+  "lat": 44.4986928,
+  "lon": 11.3611616
+},
+{
+  "type": "node",
+  "id": 253995197,
+  "lat": 44.4986153,
+  "lon": 11.3614152
+},
+{
+  "type": "node",
+  "id": 253995199,
+  "lat": 44.4986085,
+  "lon": 11.3617348
+},
+{
+  "type": "node",
+  "id": 253995672,
+  "lat": 44.5006274,
+  "lon": 11.3588404
+},
+{
+  "type": "node",
+  "id": 253995676,
+  "lat": 44.4998528,
+  "lon": 11.3590560
+},
+{
+  "type": "node",
+  "id": 253995679,
+  "lat": 44.4997065,
+  "lon": 11.3592148
+},
+{
+  "type": "node",
+  "id": 253995782,
+  "lat": 44.5018435,
+  "lon": 11.3580334
+},
+{
+  "type": "node",
+  "id": 253995783,
+  "lat": 44.5018109,
+  "lon": 11.3581919
+},
+{
+  "type": "node",
+  "id": 253995784,
+  "lat": 44.5017086,
+  "lon": 11.3583198
+},
+{
+  "type": "node",
+  "id": 253995785,
+  "lat": 44.5014919,
+  "lon": 11.3584947
+},
+{
+  "type": "node",
+  "id": 253996022,
+  "lat": 44.4986037,
+  "lon": 11.3615497
+},
+{
+  "type": "node",
+  "id": 253996024,
+  "lat": 44.4970910,
+  "lon": 11.3617347
+},
+{
+  "type": "node",
+  "id": 253996026,
+  "lat": 44.4959038,
+  "lon": 11.3618960
+},
+{
+  "type": "node",
+  "id": 255614771,
+  "lat": 44.4994825,
+  "lon": 11.3675129
+},
+{
+  "type": "node",
+  "id": 255614774,
+  "lat": 44.4987960,
+  "lon": 11.3694843
+},
+{
+  "type": "node",
+  "id": 255615599,
+  "lat": 44.4981452,
+  "lon": 11.3712777
+},
+{
+  "type": "node",
+  "id": 255617187,
+  "lat": 44.5001255,
+  "lon": 11.3637060
+},
+{
+  "type": "node",
+  "id": 255617188,
+  "lat": 44.4996918,
+  "lon": 11.3648313
+},
+{
+  "type": "node",
+  "id": 255617189,
+  "lat": 44.4997010,
+  "lon": 11.3651479
+},
+{
+  "type": "node",
+  "id": 255617190,
+  "lat": 44.4997179,
+  "lon": 11.3655300
+},
+{
+  "type": "node",
+  "id": 255617191,
+  "lat": 44.4997526,
+  "lon": 11.3665241
+},
+{
+  "type": "node",
+  "id": 255617192,
+  "lat": 44.4996807,
+  "lon": 11.3668880
+},
+{
+  "type": "node",
+  "id": 255617246,
+  "lat": 44.5018031,
+  "lon": 11.3597228
+},
+{
+  "type": "node",
+  "id": 255617248,
+  "lat": 44.5012851,
+  "lon": 11.3610762
+},
+{
+  "type": "node",
+  "id": 255617249,
+  "lat": 44.5007778,
+  "lon": 11.3622078
+},
+{
+  "type": "node",
+  "id": 255617497,
+  "lat": 44.4976202,
+  "lon": 11.3727985
+},
+{
+  "type": "node",
+  "id": 257366497,
+  "lat": 44.5021922,
+  "lon": 11.3587412
+},
+{
+  "type": "node",
+  "id": 257366590,
+  "lat": 44.5014461,
+  "lon": 11.3606749
+},
+{
+  "type": "node",
+  "id": 257609515,
+  "lat": 44.4979880,
+  "lon": 11.3593501
+},
+{
+  "type": "node",
+  "id": 258314849,
+  "lat": 44.4988734,
+  "lon": 11.3653832
+},
+{
+  "type": "node",
+  "id": 258315305,
+  "lat": 44.4972703,
+  "lon": 11.3641493
+},
+{
+  "type": "node",
+  "id": 258315309,
+  "lat": 44.4986357,
+  "lon": 11.3622543
+},
+{
+  "type": "node",
+  "id": 269336818,
+  "lat": 44.4997468,
+  "lon": 11.3591313
+},
+{
+  "type": "node",
+  "id": 283455378,
+  "lat": 44.4991499,
+  "lon": 11.3652116
+},
+{
+  "type": "node",
+  "id": 283455453,
+  "lat": 44.4990783,
+  "lon": 11.3655121
+},
+{
+  "type": "node",
+  "id": 283603886,
+  "lat": 44.4996916,
+  "lon": 11.3638561
+},
+{
+  "type": "node",
+  "id": 283603891,
+  "lat": 44.4996015,
+  "lon": 11.3638518
+},
+{
+  "type": "node",
+  "id": 366287654,
+  "lat": 44.4986944,
+  "lon": 11.3631148
+},
+{
+  "type": "node",
+  "id": 366287825,
+  "lat": 44.4972096,
+  "lon": 11.3633079
+},
+{
+  "type": "node",
+  "id": 387533929,
+  "lat": 44.5015090,
+  "lon": 11.3573431
+},
+{
+  "type": "node",
+  "id": 387533931,
+  "lat": 44.5006703,
+  "lon": 11.3576430
+},
+{
+  "type": "node",
+  "id": 410721514,
+  "lat": 44.4998357,
+  "lon": 11.3597764
+},
+{
+  "type": "node",
+  "id": 410721515,
+  "lat": 44.4998092,
+  "lon": 11.3599140
+},
+{
+  "type": "node",
+  "id": 410722200,
+  "lat": 44.4998883,
+  "lon": 11.3599573
+},
+{
+  "type": "node",
+  "id": 410723040,
+  "lat": 44.4978622,
+  "lon": 11.3590469
+},
+{
+  "type": "node",
+  "id": 410723041,
+  "lat": 44.4978342,
+  "lon": 11.3590477
+},
+{
+  "type": "node",
+  "id": 410723042,
+  "lat": 44.4978077,
+  "lon": 11.3590617
+},
+{
+  "type": "node",
+  "id": 410723043,
+  "lat": 44.4977721,
+  "lon": 11.3591218
+},
+{
+  "type": "node",
+  "id": 410723044,
+  "lat": 44.4977718,
+  "lon": 11.3591999
+},
+{
+  "type": "node",
+  "id": 410723045,
+  "lat": 44.4977976,
+  "lon": 11.3592514
+},
+{
+  "type": "node",
+  "id": 410723046,
+  "lat": 44.4978370,
+  "lon": 11.3592760
+},
+{
+  "type": "node",
+  "id": 410723047,
+  "lat": 44.4978781,
+  "lon": 11.3592704
+},
+{
+  "type": "node",
+  "id": 410723048,
+  "lat": 44.4979167,
+  "lon": 11.3592295
+},
+{
+  "type": "node",
+  "id": 410723049,
+  "lat": 44.4979291,
+  "lon": 11.3591942
+},
+{
+  "type": "node",
+  "id": 410723051,
+  "lat": 44.4979261,
+  "lon": 11.3591168
+},
+{
+  "type": "node",
+  "id": 410723101,
+  "lat": 44.4979558,
+  "lon": 11.3582711
+},
+{
+  "type": "node",
+  "id": 410723116,
+  "lat": 44.4965135,
+  "lon": 11.3584173
+},
+{
+  "type": "node",
+  "id": 410723131,
+  "lat": 44.4980768,
+  "lon": 11.3574969
+},
+{
+  "type": "node",
+  "id": 410723413,
+  "lat": 44.4965232,
+  "lon": 11.3596292
+},
+{
+  "type": "node",
+  "id": 447731909,
+  "lat": 44.4990201,
+  "lon": 11.3578706
+},
+{
+  "type": "node",
+  "id": 456990668,
+  "lat": 44.4982595,
+  "lon": 11.3595400
+},
+{
+  "type": "node",
+  "id": 456990669,
+  "lat": 44.4984636,
+  "lon": 11.3596216
+},
+{
+  "type": "node",
+  "id": 456990671,
+  "lat": 44.4985881,
+  "lon": 11.3596046
+},
+{
+  "type": "node",
+  "id": 513916512,
+  "lat": 44.4977862,
+  "lon": 11.3590874
+},
+{
+  "type": "node",
+  "id": 513916553,
+  "lat": 44.4977671,
+  "lon": 11.3591608
+},
+{
+  "type": "node",
+  "id": 513916573,
+  "lat": 44.4977821,
+  "lon": 11.3592282
+},
+{
+  "type": "node",
+  "id": 513916587,
+  "lat": 44.4978170,
+  "lon": 11.3592679
+},
+{
+  "type": "node",
+  "id": 513916600,
+  "lat": 44.4978578,
+  "lon": 11.3592769
+},
+{
+  "type": "node",
+  "id": 513916617,
+  "lat": 44.4978966,
+  "lon": 11.3592570
+},
+{
+  "type": "node",
+  "id": 513916655,
+  "lat": 44.4979323,
+  "lon": 11.3591551
+},
+{
+  "type": "node",
+  "id": 513916669,
+  "lat": 44.4979110,
+  "lon": 11.3590836
+},
+{
+  "type": "node",
+  "id": 513916675,
+  "lat": 44.4978889,
+  "lon": 11.3590593
+},
+{
+  "type": "node",
+  "id": 521764091,
+  "lat": 44.5018110,
+  "lon": 11.3579520
+},
+{
+  "type": "node",
+  "id": 537752778,
+  "lat": 44.5006627,
+  "lon": 11.3624376
+},
+{
+  "type": "node",
+  "id": 537752800,
+  "lat": 44.5016421,
+  "lon": 11.3651341
+},
+{
+  "type": "node",
+  "id": 541551468,
+  "lat": 44.4978718,
+  "lon": 11.3582741
+},
+{
+  "type": "node",
+  "id": 541551479,
+  "lat": 44.4978663,
+  "lon": 11.3588123
+},
+{
+  "type": "node",
+  "id": 541551505,
+  "lat": 44.4996560,
+  "lon": 11.3591932
+},
+{
+  "type": "node",
+  "id": 541551509,
+  "lat": 44.4995975,
+  "lon": 11.3592253
+},
+{
+  "type": "node",
+  "id": 541551512,
+  "lat": 44.4996824,
+  "lon": 11.3591986
+},
+{
+  "type": "node",
+  "id": 541551515,
+  "lat": 44.4996234,
+  "lon": 11.3594312
+},
+{
+  "type": "node",
+  "id": 541551519,
+  "lat": 44.4995759,
+  "lon": 11.3592675
+},
+{
+  "type": "node",
+  "id": 541551522,
+  "lat": 44.4995948,
+  "lon": 11.3594048
+},
+{
+  "type": "node",
+  "id": 541551526,
+  "lat": 44.4995756,
+  "lon": 11.3593652
+},
+{
+  "type": "node",
+  "id": 541551529,
+  "lat": 44.4997359,
+  "lon": 11.3593711
+},
+{
+  "type": "node",
+  "id": 541551533,
+  "lat": 44.4996905,
+  "lon": 11.3594310
+},
+{
+  "type": "node",
+  "id": 541551539,
+  "lat": 44.4997420,
+  "lon": 11.3592853
+},
+{
+  "type": "node",
+  "id": 541551544,
+  "lat": 44.4997445,
+  "lon": 11.3593289
+},
+{
+  "type": "node",
+  "id": 541551557,
+  "lat": 44.4996570,
+  "lon": 11.3594404
+},
+{
+  "type": "node",
+  "id": 541551580,
+  "lat": 44.4998234,
+  "lon": 11.3596098
+},
+{
+  "type": "node",
+  "id": 541551593,
+  "lat": 44.5011667,
+  "lon": 11.3586782
+},
+{
+  "type": "node",
+  "id": 595672217,
+  "lat": 44.5000666,
+  "lon": 11.3629244
+},
+{
+  "type": "node",
+  "id": 673756907,
+  "lat": 44.5019325,
+  "lon": 11.3626948
+},
+{
+  "type": "node",
+  "id": 673756924,
+  "lat": 44.5021698,
+  "lon": 11.3624694
+},
+{
+  "type": "node",
+  "id": 673756936,
+  "lat": 44.5020894,
+  "lon": 11.3625446
+},
+{
+  "type": "node",
+  "id": 673756943,
+  "lat": 44.5023005,
+  "lon": 11.3627198
+},
+{
+  "type": "node",
+  "id": 673756972,
+  "lat": 44.5009036,
+  "lon": 11.3634544
+},
+{
+  "type": "node",
+  "id": 673756979,
+  "lat": 44.5011245,
+  "lon": 11.3642443
+},
+{
+  "type": "node",
+  "id": 673756982,
+  "lat": 44.5009714,
+  "lon": 11.3638580
+},
+{
+  "type": "node",
+  "id": 673756989,
+  "lat": 44.5013387,
+  "lon": 11.3632680
+},
+{
+  "type": "node",
+  "id": 739659669,
+  "lat": 44.4976597,
+  "lon": 11.3726554
+},
+{
+  "type": "node",
+  "id": 1062598501,
+  "lat": 44.4990848,
+  "lon": 11.3594441
+},
+{
+  "type": "node",
+  "id": 1551062945,
+  "lat": 44.4988297,
+  "lon": 11.3595274
+},
+{
+  "type": "node",
+  "id": 1753903932,
+  "lat": 44.5005979,
+  "lon": 11.3585769
+},
+{
+  "type": "node",
+  "id": 1753903934,
+  "lat": 44.5007264,
+  "lon": 11.3588434
+},
+{
+  "type": "node",
+  "id": 1753903935,
+  "lat": 44.5013351,
+  "lon": 11.3585937
+},
+{
+  "type": "node",
+  "id": 1753903938,
+  "lat": 44.5013109,
+  "lon": 11.3576007
+},
+{
+  "type": "node",
+  "id": 1753903946,
+  "lat": 44.4997288,
+  "lon": 11.3592455
+},
+{
+  "type": "node",
+  "id": 1753903947,
+  "lat": 44.5013494,
+  "lon": 11.3574913
+},
+{
+  "type": "node",
+  "id": 1753903949,
+  "lat": 44.4997948,
+  "lon": 11.3590842
+},
+{
+  "type": "node",
+  "id": 1753903952,
+  "lat": 44.5000479,
+  "lon": 11.3590151
+},
+{
+  "type": "node",
+  "id": 1753903955,
+  "lat": 44.5008759,
+  "lon": 11.3588091
+},
+{
+  "type": "node",
+  "id": 1753903956,
+  "lat": 44.5005437,
+  "lon": 11.3588489
+},
+{
+  "type": "node",
+  "id": 1825999090,
+  "lat": 44.4985865,
+  "lon": 11.3599100
+},
+{
+  "type": "node",
+  "id": 2247044979,
+  "lat": 44.4997419,
+  "lon": 11.3666519
+},
+{
+  "type": "node",
+  "id": 2247044980,
+  "lat": 44.5008419,
+  "lon": 11.3623772
+},
+{
+  "type": "node",
+  "id": 2247044981,
+  "lat": 44.5008512,
+  "lon": 11.3620685
+},
+{
+  "type": "node",
+  "id": 2247044982,
+  "lat": 44.5020000,
+  "lon": 11.3592249
+},
+{
+  "type": "node",
+  "id": 2351206387,
+  "lat": 44.4999004,
+  "lon": 11.3597334
+},
+{
+  "type": "node",
+  "id": 2351206389,
+  "lat": 44.5000082,
+  "lon": 11.3598624
+},
+{
+  "type": "node",
+  "id": 2351206390,
+  "lat": 44.5001463,
+  "lon": 11.3599818
+},
+{
+  "type": "node",
+  "id": 2351206391,
+  "lat": 44.5002836,
+  "lon": 11.3600935
+},
+{
+  "type": "node",
+  "id": 2351206392,
+  "lat": 44.5005031,
+  "lon": 11.3602670
+},
+{
+  "type": "node",
+  "id": 2351206397,
+  "lat": 44.5017525,
+  "lon": 11.3612386
+},
+{
+  "type": "node",
+  "id": 2351206398,
+  "lat": 44.5019107,
+  "lon": 11.3613714
+},
+{
+  "type": "node",
+  "id": 2351206400,
+  "lat": 44.5019731,
+  "lon": 11.3614363
+},
+{
+  "type": "node",
+  "id": 2351206401,
+  "lat": 44.5020312,
+  "lon": 11.3614966
+},
+{
+  "type": "node",
+  "id": 2351206404,
+  "lat": 44.5021302,
+  "lon": 11.3616203
+},
+{
+  "type": "node",
+  "id": 2395184848,
+  "lat": 44.4983607,
+  "lon": 11.3595919
+},
+{
+  "type": "node",
+  "id": 2444944928,
+  "lat": 44.4993165,
+  "lon": 11.3585514
+},
+{
+  "type": "node",
+  "id": 2474206472,
+  "lat": 44.4994545,
+  "lon": 11.3654831
+},
+{
+  "type": "node",
+  "id": 2477675728,
+  "lat": 44.4999068,
+  "lon": 11.3620750
+},
+{
+  "type": "node",
+  "id": 2691157200,
+  "lat": 44.4987125,
+  "lon": 11.3611222
+},
+{
+  "type": "node",
+  "id": 2714345010,
+  "lat": 44.5005919,
+  "lon": 11.3588411
+},
+{
+  "type": "node",
+  "id": 2714345012,
+  "lat": 44.5006610,
+  "lon": 11.3577630
+},
+{
+  "type": "node",
+  "id": 2714345018,
+  "lat": 44.5006292,
+  "lon": 11.3587353
+},
+{
+  "type": "node",
+  "id": 2714349727,
+  "lat": 44.4994340,
+  "lon": 11.3603068
+},
+{
+  "type": "node",
+  "id": 2714349728,
+  "lat": 44.4986524,
+  "lon": 11.3631201
+},
+{
+  "type": "node",
+  "id": 2714349730,
+  "lat": 44.4989891,
+  "lon": 11.3577927
+},
+{
+  "type": "node",
+  "id": 2714349733,
+  "lat": 44.4991497,
+  "lon": 11.3606101
+},
+{
+  "type": "node",
+  "id": 2714349735,
+  "lat": 44.4985750,
+  "lon": 11.3615488
+},
+{
+  "type": "node",
+  "id": 2714351554,
+  "lat": 44.4997787,
+  "lon": 11.3654585
+},
+{
+  "type": "node",
+  "id": 2714351569,
+  "lat": 44.5001227,
+  "lon": 11.3654360
+},
+{
+  "type": "node",
+  "id": 2921257845,
+  "lat": 44.4968216,
+  "lon": 11.3595290
+},
+{
+  "type": "node",
+  "id": 3099739361,
+  "lat": 44.4983791,
+  "lon": 11.3599742
+},
+{
+  "type": "node",
+  "id": 3182706339,
+  "lat": 44.4972313,
+  "lon": 11.3593915
+},
+{
+  "type": "node",
+  "id": 3182706340,
+  "lat": 44.4972831,
+  "lon": 11.3593741
+},
+{
+  "type": "node",
+  "id": 3182706352,
+  "lat": 44.4964748,
+  "lon": 11.3596525
+},
+{
+  "type": "node",
+  "id": 3241773360,
+  "lat": 44.4997220,
+  "lon": 11.3667439
+},
+{
+  "type": "node",
+  "id": 3241773379,
+  "lat": 44.4997492,
+  "lon": 11.3665864
+},
+{
+  "type": "node",
+  "id": 3433695946,
+  "lat": 44.5003345,
+  "lon": 11.3589234
+},
+{
+  "type": "node",
+  "id": 3433695957,
+  "lat": 44.4998546,
+  "lon": 11.3596607
+},
+{
+  "type": "node",
+  "id": 3464895965,
+  "lat": 44.4978301,
+  "lon": 11.3640798
+},
+{
+  "type": "node",
+  "id": 3464977005,
+  "lat": 44.5002126,
+  "lon": 11.3618217
+},
+{
+  "type": "node",
+  "id": 3464977006,
+  "lat": 44.4986796,
+  "lon": 11.3629220
+},
+{
+  "type": "node",
+  "id": 3464977906,
+  "lat": 44.4987173,
+  "lon": 11.3633916
+},
+{
+  "type": "node",
+  "id": 3464978302,
+  "lat": 44.4993517,
+  "lon": 11.3603904
+},
+{
+  "type": "node",
+  "id": 3752026557,
+  "lat": 44.5018398,
+  "lon": 11.3581176
+},
+{
+  "type": "node",
+  "id": 4008227050,
+  "lat": 44.4986255,
+  "lon": 11.3598995
+},
+{
+  "type": "node",
+  "id": 4193307156,
+  "lat": 44.4964091,
+  "lon": 11.3596759
+},
+{
+  "type": "node",
+  "id": 4477430810,
+  "lat": 44.4974143,
+  "lon": 11.3593301
+},
+{
+  "type": "node",
+  "id": 4487534266,
+  "lat": 44.4990394,
+  "lon": 11.3594582
+},
+{
+  "type": "node",
+  "id": 4487534267,
+  "lat": 44.4991005,
+  "lon": 11.3595188
+},
+{
+  "type": "node",
+  "id": 4487534268,
+  "lat": 44.4989360,
+  "lon": 11.3595752
+},
+{
+  "type": "node",
+  "id": 4487534306,
+  "lat": 44.4989967,
+  "lon": 11.3594043
+},
+{
+  "type": "node",
+  "id": 4487534307,
+  "lat": 44.4991928,
+  "lon": 11.3593466
+},
+{
+  "type": "node",
+  "id": 4512392379,
+  "lat": 44.4977845,
+  "lon": 11.3640114
+},
+{
+  "type": "node",
+  "id": 4512392380,
+  "lat": 44.4979055,
+  "lon": 11.3639947
+},
+{
+  "type": "node",
+  "id": 4512392382,
+  "lat": 44.4987106,
+  "lon": 11.3628341
+},
+{
+  "type": "node",
+  "id": 4512392383,
+  "lat": 44.4987215,
+  "lon": 11.3629811
+},
+{
+  "type": "node",
+  "id": 4512392385,
+  "lat": 44.4986857,
+  "lon": 11.3634740
+},
+{
+  "type": "node",
+  "id": 4512394258,
+  "lat": 44.4986732,
+  "lon": 11.3633198
+},
+{
+  "type": "node",
+  "id": 4512394260,
+  "lat": 44.5002708,
+  "lon": 11.3618033
+},
+{
+  "type": "node",
+  "id": 4512394261,
+  "lat": 44.5002021,
+  "lon": 11.3619028
+},
+{
+  "type": "node",
+  "id": 4512394263,
+  "lat": 44.4992926,
+  "lon": 11.3604046
+},
+{
+  "type": "node",
+  "id": 4512394264,
+  "lat": 44.4993841,
+  "lon": 11.3603117
+},
+{
+  "type": "node",
+  "id": 4828458739,
+  "lat": 44.5008185,
+  "lon": 11.3588272
+},
+{
+  "type": "node",
+  "id": 4828786092,
+  "lat": 44.5006587,
+  "lon": 11.3577800
+},
+{
+  "type": "node",
+  "id": 4828786095,
+  "lat": 44.5006578,
+  "lon": 11.3578192
+},
+{
+  "type": "node",
+  "id": 4828786096,
+  "lat": 44.5012858,
+  "lon": 11.3577039
+},
+{
+  "type": "node",
+  "id": 4828786097,
+  "lat": 44.5012049,
+  "lon": 11.3576959
+},
+{
+  "type": "node",
+  "id": 4828807822,
+  "lat": 44.5006682,
+  "lon": 11.3576703
+},
+{
+  "type": "node",
+  "id": 4828807825,
+  "lat": 44.5006629,
+  "lon": 11.3577380
+},
+{
+  "type": "node",
+  "id": 4847809361,
+  "lat": 44.5009711,
+  "lon": 11.3653738
+},
+{
+  "type": "node",
+  "id": 5844470742,
+  "lat": 44.4977366,
+  "lon": 11.3592125
+},
+{
+  "type": "node",
+  "id": 5844470743,
+  "lat": 44.4978412,
+  "lon": 11.3589962
+},
+{
+  "type": "node",
+  "id": 5845666455,
+  "lat": 44.4989450,
+  "lon": 11.3576361
+},
+{
+  "type": "node",
+  "id": 5845666459,
+  "lat": 44.5011103,
+  "lon": 11.3587038
+},
+{
+  "type": "node",
+  "id": 5845666461,
+  "lat": 44.5010457,
+  "lon": 11.3587332
+},
+{
+  "type": "node",
+  "id": 6379885260,
+  "lat": 44.4995410,
+  "lon": 11.3621290
+},
+{
+  "type": "node",
+  "id": 6379885262,
+  "lat": 44.4987892,
+  "lon": 11.3610148
+},
+{
+  "type": "node",
+  "id": 6394987070,
+  "lat": 44.4995164,
+  "lon": 11.3621313
+},
+{
+  "type": "node",
+  "id": 7486333362,
+  "lat": 44.4973046,
+  "lon": 11.3593653
+},
+{
+  "type": "node",
+  "id": 7954518439,
+  "lat": 44.4991522,
+  "lon": 11.3621789
+},
+{
+  "type": "node",
+  "id": 7974893349,
+  "lat": 44.5017955,
+  "lon": 11.3579207
+},
+{
+  "type": "node",
+  "id": 8107940516,
+  "lat": 44.5013641,
+  "lon": 11.3653420
+},
+{
+  "type": "node",
+  "id": 8480942105,
+  "lat": 44.5008774,
+  "lon": 11.3662634
+},
+{
+  "type": "node",
+  "id": 8480942106,
+  "lat": 44.5013370,
+  "lon": 11.3663168
+},
+{
+  "type": "node",
+  "id": 8480942108,
+  "lat": 44.4997270,
+  "lon": 11.3657835
+},
+{
+  "type": "node",
+  "id": 8730499949,
+  "lat": 44.4985083,
+  "lon": 11.3599330
+},
+{
+  "type": "node",
+  "id": 8763965550,
+  "lat": 44.4997278,
+  "lon": 11.3593899
+},
+{
+  "type": "node",
+  "id": 8763965552,
+  "lat": 44.4997415,
+  "lon": 11.3593506
+},
+{
+  "type": "node",
+  "id": 8763965553,
+  "lat": 44.4997446,
+  "lon": 11.3593069
+},
+{
+  "type": "node",
+  "id": 8763965554,
+  "lat": 44.4997366,
+  "lon": 11.3592646
+},
+{
+  "type": "node",
+  "id": 8763965555,
+  "lat": 44.4997186,
+  "lon": 11.3592288
+},
+{
+  "type": "node",
+  "id": 8763965556,
+  "lat": 44.4996126,
+  "lon": 11.3592098
+},
+{
+  "type": "node",
+  "id": 8763965557,
+  "lat": 44.4995851,
+  "lon": 11.3592448
+},
+{
+  "type": "node",
+  "id": 8763965558,
+  "lat": 44.4995703,
+  "lon": 11.3592923
+},
+{
+  "type": "node",
+  "id": 8763965559,
+  "lat": 44.4995705,
+  "lon": 11.3593422
+},
+{
+  "type": "node",
+  "id": 8763965560,
+  "lat": 44.4995838,
+  "lon": 11.3593863
+},
+{
+  "type": "node",
+  "id": 8763965561,
+  "lat": 44.4996082,
+  "lon": 11.3594200
+},
+{
+  "type": "node",
+  "id": 8763965562,
+  "lat": 44.4996399,
+  "lon": 11.3594381
+},
+{
+  "type": "node",
+  "id": 8763965563,
+  "lat": 44.4996741,
+  "lon": 11.3594380
+},
+{
+  "type": "node",
+  "id": 8991334965,
+  "lat": 44.5000100,
+  "lon": 11.3621444
+},
+{
+  "type": "node",
+  "id": 8991334971,
+  "lat": 44.4996332,
+  "lon": 11.3621156
+},
+{
+  "type": "node",
+  "id": 8991334974,
+  "lat": 44.5000440,
+  "lon": 11.3626105
+},
+{
+  "type": "node",
+  "id": 9675044085,
+  "lat": 44.4977293,
+  "lon": 11.3601675
+},
+{
+  "type": "node",
+  "id": 10260179703,
+  "lat": 44.4976344,
+  "lon": 11.3727265
+},
+{
+  "type": "node",
+  "id": 10260179704,
+  "lat": 44.4976251,
+  "lon": 11.3727619
+},
+{
+  "type": "node",
+  "id": 10260186946,
+  "lat": 44.4981986,
+  "lon": 11.3711295
+},
+{
+  "type": "node",
+  "id": 10873834814,
+  "lat": 44.4981899,
+  "lon": 11.3568141
+},
+{
+  "type": "node",
+  "id": 10951967643,
+  "lat": 44.4997655,
+  "lon": 11.3591074
+},
+{
+  "type": "node",
+  "id": 10951967644,
+  "lat": 44.4998264,
+  "lon": 11.3590661
+},
+{
+  "type": "node",
+  "id": 10951967645,
+  "lat": 44.5007684,
+  "lon": 11.3588394
+},
+{
+  "type": "node",
+  "id": 10965051002,
+  "lat": 44.4997114,
+  "lon": 11.3653704
+},
+{
+  "type": "node",
+  "id": 10965051003,
+  "lat": 44.5012056,
+  "lon": 11.3643837
+},
+{
+  "type": "node",
+  "id": 11010622499,
+  "lat": 44.5010720,
+  "lon": 11.3615878
+},
+{
+  "type": "node",
+  "id": 11010622500,
+  "lat": 44.5009377,
+  "lon": 11.3618965
+},
+{
+  "type": "node",
+  "id": 11010622501,
+  "lat": 44.5009164,
+  "lon": 11.3636629
+},
+{
+  "type": "node",
+  "id": 11010622502,
+  "lat": 44.5001914,
+  "lon": 11.3637299
+},
+{
+  "type": "node",
+  "id": 11010622503,
+  "lat": 44.4994412,
+  "lon": 11.3676303
+},
+{
+  "type": "node",
+  "id": 11016387750,
+  "lat": 44.4971789,
+  "lon": 11.3624781
+},
+{
+  "type": "node",
+  "id": 11016387766,
+  "lat": 44.4969959,
+  "lon": 11.3617432
+},
+{
+  "type": "node",
+  "id": 11016387767,
+  "lat": 44.4971643,
+  "lon": 11.3617284
+},
+{
+  "type": "node",
+  "id": 11016418905,
+  "lat": 44.4972784,
+  "lon": 11.3632997
+},
+{
+  "type": "node",
+  "id": 11016418907,
+  "lat": 44.4973624,
+  "lon": 11.3641382
+},
+{
+  "type": "node",
+  "id": 11016418932,
+  "lat": 44.4972542,
+  "lon": 11.3624666
+},
+{
+  "type": "node",
+  "id": 11016419055,
+  "lat": 44.4986032,
+  "lon": 11.3616244
+},
+{
+  "type": "node",
+  "id": 11016419056,
+  "lat": 44.4986078,
+  "lon": 11.3614893
+},
+{
+  "type": "node",
+  "id": 11016419057,
+  "lat": 44.4986448,
+  "lon": 11.3612852
+},
+{
+  "type": "node",
+  "id": 11016419058,
+  "lat": 44.4986650,
+  "lon": 11.3612247
+},
+{
+  "type": "node",
+  "id": 11016419069,
+  "lat": 44.4986851,
+  "lon": 11.3639633
+},
+{
+  "type": "node",
+  "id": 11016419070,
+  "lat": 44.4996427,
+  "lon": 11.3638478
+},
+{
+  "type": "node",
+  "id": 11016419079,
+  "lat": 44.4988670,
+  "lon": 11.3653588
+},
+{
+  "type": "node",
+  "id": 11016595912,
+  "lat": 44.4972890,
+  "lon": 11.3624625
+},
+{
+  "type": "node",
+  "id": 11018504369,
+  "lat": 44.4992268,
+  "lon": 11.3638997
+},
+{
+  "type": "node",
+  "id": 11018504370,
+  "lat": 44.4990846,
+  "lon": 11.3653533
+},
+{
+  "type": "node",
+  "id": 11018504371,
+  "lat": 44.4990700,
+  "lon": 11.3653710
+},
+{
+  "type": "node",
+  "id": 11018504372,
+  "lat": 44.4990517,
+  "lon": 11.3653787
+},
+{
+  "type": "node",
+  "id": 11018504373,
+  "lat": 44.4989044,
+  "lon": 11.3653959
+},
+{
+  "type": "node",
+  "id": 11018504374,
+  "lat": 44.4988897,
+  "lon": 11.3653929
+},
+{
+  "type": "node",
+  "id": 11018504380,
+  "lat": 44.5000539,
+  "lon": 11.3630219
+},
+{
+  "type": "node",
+  "id": 11018504381,
+  "lat": 44.5000676,
+  "lon": 11.3629555
+},
+{
+  "type": "node",
+  "id": 11018504382,
+  "lat": 44.5000620,
+  "lon": 11.3629970
+},
+{
+  "type": "node",
+  "id": 11018504383,
+  "lat": 44.5000287,
+  "lon": 11.3620499
+},
+{
+  "type": "node",
+  "id": 11018504384,
+  "lat": 44.4996588,
+  "lon": 11.3639384
+},
+{
+  "type": "node",
+  "id": 11018535670,
+  "lat": 44.5000495,
+  "lon": 11.3620368
+},
+{
+  "type": "node",
+  "id": 11018535725,
+  "lat": 44.5006357,
+  "lon": 11.3612387
+},
+{
+  "type": "node",
+  "id": 11018535729,
+  "lat": 44.5006683,
+  "lon": 11.3611004
+},
+{
+  "type": "node",
+  "id": 11018535730,
+  "lat": 44.5006548,
+  "lon": 11.3611896
+},
+{
+  "type": "node",
+  "id": 11018535731,
+  "lat": 44.5005686,
+  "lon": 11.3605692
+},
+{
+  "type": "node",
+  "id": 11018535732,
+  "lat": 44.5005142,
+  "lon": 11.3604818
+},
+{
+  "type": "node",
+  "id": 11018535744,
+  "lat": 44.4987464,
+  "lon": 11.3610700
+},
+{
+  "type": "node",
+  "id": 11018535802,
+  "lat": 44.4985555,
+  "lon": 11.3615508
+},
+{
+  "type": "node",
+  "id": 11018535803,
+  "lat": 44.4986175,
+  "lon": 11.3619070
+},
+{
+  "type": "node",
+  "id": 11018535804,
+  "lat": 44.4986270,
+  "lon": 11.3613505
+},
+{
+  "type": "node",
+  "id": 11018535805,
+  "lat": 44.4986300,
+  "lon": 11.3620973
+},
+{
+  "type": "node",
+  "id": 11018535806,
+  "lat": 44.4987411,
+  "lon": 11.3622381
+},
+{
+  "type": "node",
+  "id": 11018535807,
+  "lat": 44.4985411,
+  "lon": 11.3622681
+},
+{
+  "type": "node",
+  "id": 11018535809,
+  "lat": 44.4986431,
+  "lon": 11.3624100
+},
+{
+  "type": "node",
+  "id": 11018535860,
+  "lat": 44.4988435,
+  "lon": 11.3639488
+},
+{
+  "type": "node",
+  "id": 11018535863,
+  "lat": 44.4987693,
+  "lon": 11.3640683
+},
+{
+  "type": "node",
+  "id": 11018535864,
+  "lat": 44.4987522,
+  "lon": 11.3638414
+},
+{
+  "type": "node",
+  "id": 11018535865,
+  "lat": 44.4987535,
+  "lon": 11.3638587
+},
+{
+  "type": "node",
+  "id": 11018535877,
+  "lat": 44.4991275,
+  "lon": 11.3652638
+},
+{
+  "type": "node",
+  "id": 11018535879,
+  "lat": 44.4989252,
+  "lon": 11.3653935
+},
+{
+  "type": "node",
+  "id": 11018535880,
+  "lat": 44.4990984,
+  "lon": 11.3653280
+},
+{
+  "type": "node",
+  "id": 11071694403,
+  "lat": 44.4997123,
+  "lon": 11.3653910
+},
+{
+  "type": "node",
+  "id": 11076836890,
+  "lat": 44.4989617,
+  "lon": 11.3690082
+},
+{
+  "type": "node",
+  "id": 11076836896,
+  "lat": 44.4993263,
+  "lon": 11.3679605
+},
+{
+  "type": "node",
+  "id": 11076848968,
+  "lat": 44.4996996,
+  "lon": 11.3668220
+},
+{
+  "type": "node",
+  "id": 11076849026,
+  "lat": 44.4996452,
+  "lon": 11.3670069
+},
+{
+  "type": "node",
+  "id": 11076849027,
+  "lat": 44.4996043,
+  "lon": 11.3671409
+},
+{
+  "type": "node",
+  "id": 11076849028,
+  "lat": 44.4997533,
+  "lon": 11.3664412
+},
+{
+  "type": "node",
+  "id": 11076849029,
+  "lat": 44.4997509,
+  "lon": 11.3663609
+},
+{
+  "type": "node",
+  "id": 11076849031,
+  "lat": 44.4997092,
+  "lon": 11.3647347
+},
+{
+  "type": "node",
+  "id": 11076849032,
+  "lat": 44.4996977,
+  "lon": 11.3647854
+},
+{
+  "type": "node",
+  "id": 11076849033,
+  "lat": 44.4996925,
+  "lon": 11.3648863
+},
+{
+  "type": "node",
+  "id": 11076849034,
+  "lat": 44.4997249,
+  "lon": 11.3646863
+},
+{
+  "type": "node",
+  "id": 11076849118,
+  "lat": 44.4995647,
+  "lon": 11.3672640
+},
+{
+  "type": "node",
+  "id": 11076849407,
+  "lat": 44.4996264,
+  "lon": 11.3670685
+},
+{
+  "type": "node",
+  "id": 11083824507,
+  "lat": 44.4994926,
+  "lon": 11.3588597
+},
+{
+  "type": "node",
+  "id": 11084127441,
+  "lat": 44.4999258,
+  "lon": 11.3599952
+},
+{
+  "type": "node",
+  "id": 11084127442,
+  "lat": 44.5001098,
+  "lon": 11.3601586
+},
+{
+  "type": "node",
+  "id": 11084127443,
+  "lat": 44.5004545,
+  "lon": 11.3604277
+},
+{
+  "type": "node",
+  "id": 11084127444,
+  "lat": 44.5005366,
+  "lon": 11.3605066
+},
+{
+  "type": "node",
+  "id": 11084127451,
+  "lat": 44.4999630,
+  "lon": 11.3600329
+},
+{
+  "type": "node",
+  "id": 11084127525,
+  "lat": 44.4986116,
+  "lon": 11.3614521
+},
+{
+  "type": "node",
+  "id": 11084127562,
+  "lat": 44.4989048,
+  "lon": 11.3608812
+},
+{
+  "type": "node",
+  "id": 11084127563,
+  "lat": 44.4992283,
+  "lon": 11.3605239
+},
+{
+  "type": "node",
+  "id": 11084127564,
+  "lat": 44.4996140,
+  "lon": 11.3601443
+},
+{
+  "type": "node",
+  "id": 11084127565,
+  "lat": 44.4997129,
+  "lon": 11.3600485
+},
+{
+  "type": "node",
+  "id": 11084127566,
+  "lat": 44.4997729,
+  "lon": 11.3599705
+},
+{
+  "type": "node",
+  "id": 11084127567,
+  "lat": 44.4996741,
+  "lon": 11.3600875
+},
+{
+  "type": "node",
+  "id": 11084127621,
+  "lat": 44.4982969,
+  "lon": 11.3599986
+},
+{
+  "type": "node",
+  "id": 11084127625,
+  "lat": 44.4999601,
+  "lon": 11.3598086
+},
+{
+  "type": "node",
+  "id": 11084127626,
+  "lat": 44.4998618,
+  "lon": 11.3599376
+},
+{
+  "type": "node",
+  "id": 11084127627,
+  "lat": 44.4998388,
+  "lon": 11.3596367
+},
+{
+  "type": "node",
+  "id": 11084127628,
+  "lat": 44.4998402,
+  "lon": 11.3596928
+},
+{
+  "type": "node",
+  "id": 11084127629,
+  "lat": 44.4998377,
+  "lon": 11.3597435
+},
+{
+  "type": "node",
+  "id": 11084127630,
+  "lat": 44.4998312,
+  "lon": 11.3598261
+},
+{
+  "type": "node",
+  "id": 11084127631,
+  "lat": 44.4998299,
+  "lon": 11.3599204
+},
+{
+  "type": "node",
+  "id": 11084127632,
+  "lat": 44.4998835,
+  "lon": 11.3599341
+},
+{
+  "type": "node",
+  "id": 11084127633,
+  "lat": 44.4998810,
+  "lon": 11.3598713
+},
+{
+  "type": "node",
+  "id": 11084127634,
+  "lat": 44.4998879,
+  "lon": 11.3598402
+},
+{
+  "type": "node",
+  "id": 11084127635,
+  "lat": 44.4999049,
+  "lon": 11.3597983
+},
+{
+  "type": "node",
+  "id": 11084127636,
+  "lat": 44.4999246,
+  "lon": 11.3597639
+},
+{
+  "type": "node",
+  "id": 11084127637,
+  "lat": 44.4998802,
+  "lon": 11.3599025
+},
+{
+  "type": "node",
+  "id": 11084127638,
+  "lat": 44.4998200,
+  "lon": 11.3598818
+},
+{
+  "type": "node",
+  "id": 11084127658,
+  "lat": 44.4996083,
+  "lon": 11.3590935
+},
+{
+  "type": "node",
+  "id": 11084127659,
+  "lat": 44.4996223,
+  "lon": 11.3591547
+},
+{
+  "type": "node",
+  "id": 11084127660,
+  "lat": 44.4995761,
+  "lon": 11.3590058
+},
+{
+  "type": "node",
+  "id": 11084127668,
+  "lat": 44.4991320,
+  "lon": 11.3581352
+},
+{
+  "type": "node",
+  "id": 11299531124,
+  "lat": 44.5022360,
+  "lon": 11.3625963
+},
+{
+  "type": "node",
+  "id": 11381162820,
+  "lat": 44.4985789,
+  "lon": 11.3567421
+},
+{
+  "type": "node",
+  "id": 11381162830,
+  "lat": 44.4986412,
+  "lon": 11.3568862
+},
+{
+  "type": "node",
+  "id": 11381162839,
+  "lat": 44.4990779,
+  "lon": 11.3580091
+},
+{
+  "type": "node",
+  "id": 11381162842,
+  "lat": 44.4989721,
+  "lon": 11.3577443
+},
+{
+  "type": "node",
+  "id": 11381162843,
+  "lat": 44.4989608,
+  "lon": 11.3576944
+},
+{
+  "type": "node",
+  "id": 11381162851,
+  "lat": 44.4993069,
+  "lon": 11.3585297
+},
+{
+  "type": "node",
+  "id": 11381162856,
+  "lat": 44.4995883,
+  "lon": 11.3590330
+},
+{
+  "type": "node",
+  "id": 11381162859,
+  "lat": 44.4997590,
+  "lon": 11.3591157
+},
+{
+  "type": "node",
+  "id": 11381162861,
+  "lat": 44.4998329,
+  "lon": 11.3596015
+},
+{
+  "type": "node",
+  "id": 11381162862,
+  "lat": 44.4997638,
+  "lon": 11.3594540
+},
+{
+  "type": "node",
+  "id": 11390356016,
+  "lat": 44.4998512,
+  "lon": 11.3599307
+},
+{
+  "type": "node",
+  "id": 11390356018,
+  "lat": 44.4994098,
+  "lon": 11.3593791
+},
+{
+  "type": "node",
+  "id": 11390356022,
+  "lat": 44.4994425,
+  "lon": 11.3593791
+},
+{
+  "type": "node",
+  "id": 11390356023,
+  "lat": 44.4993564,
+  "lon": 11.3593791
+},
+{
+  "type": "node",
+  "id": 11390356024,
+  "lat": 44.4995233,
+  "lon": 11.3593885
+},
+{
+  "type": "node",
+  "id": 11390356025,
+  "lat": 44.4992533,
+  "lon": 11.3593941
+}
+
+  ]
+}

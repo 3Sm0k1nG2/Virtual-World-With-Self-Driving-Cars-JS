@@ -16,7 +16,7 @@ class Start extends Marking {
         this.type = MARKING_START;
 
         this.img = new Image();
-        this.img.src = "./car.svg";
+        this.img.src = "../../../car.svg";
     }
 
     /** @param {CanvasRenderingContext2D} ctx */
@@ -25,7 +25,7 @@ class Start extends Marking {
         ctx.translate(this.center.x, this.center.y);
         ctx.rotate(angle(this.directionVector) - Math.PI / 2);
 
-        ctx.drawImage(this.img, -this.img.width / 2, -this.img.height / 2)
+        ctx.drawImage(this.img, -this.img.width / 2, -this.img.height / 2);
 
         ctx.restore();
     }

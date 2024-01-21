@@ -15,6 +15,7 @@ import YieldEditor from "./editors/markingEditors/yieldEditor.js";
 import ParkingEditor from "./editors/markingEditors/parkingEditor.js";
 import LightEditor from "./editors/markingEditors/lightEditor.js";
 import TargetEditor from "./editors/markingEditors/targetEditor.js";
+import Osm from "./math/osm.js";
 
 globalThis.load = load;
 
@@ -107,6 +108,28 @@ globalThis.save = () => {
 globalThis.debug = () => {
     world.debug = !world.debug;
 }
+
+globalThis.openOsmPanel = () => {
+    osmPanel.style.display = "block";
+}
+
+const osm = new Osm();
+globalThis.parseOsmData = () => {
+    if(!osmDataContainer.value.length) {
+        alert("Paste data first");
+    }
+
+    const {points, segments} = osm.parseRoads(JSON.parse(osmDataContainer.value), canvas);
+    
+    graph.points = points;
+    graph.segments = segments;
+
+    closeOsmData();
+}
+
+globalThis.closeOsmData = () => {
+    osmPanel.style.display = "none";
+} 
 
 globalThis.setMode = setMode;
 

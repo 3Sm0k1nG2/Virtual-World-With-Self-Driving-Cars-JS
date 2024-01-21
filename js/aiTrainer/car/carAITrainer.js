@@ -53,15 +53,15 @@ class CarAITrainer {
 
     #forceCrashIdlingCars() {
         for(let subjectId in this.subjects){
-            if(!this.subjects[subjectId].object.speed){
+            if(!this.subjects[subjectId].object.distanceTraveled){
                 this.simulateCrash(this.subjects[subjectId]);
             }
         }
     }
 
     refreshBestSubject() {
-        this.#forceCrashIdlingCars();
         this.#updateBestCarByDistanceTraveled();
+        this.#forceCrashIdlingCars();
     }
 
     /**

@@ -178,6 +178,10 @@ export function lerp(a, b, top){
     return a + (b - a) * top;
 }
 
+export function invLerp(min, max, v) {
+    return (v - min) / (max - min);
+}
+
 /**
  * @param {Point} pA 
  * @param {Point} pB 
@@ -198,3 +202,7 @@ export function getFake3dPoint(point, viewPoint, height) {
     const scaler = Math.atan(dist / 300) / (Math.PI / 2);
     return add(point, scale(dir, height * scaler));
  }
+
+export function degToRad(degree) {
+    return degree * Math.PI / 180;
+}

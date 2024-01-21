@@ -6,9 +6,10 @@ class Segment {
      * @param {Point} p1 
      * @param {Point} p2
      */
-    constructor(p1, p2) {
+    constructor(p1, p2, oneWay = false) {
         this.p1 = p1;
         this.p2 = p2;
+        this.oneWay = oneWay;
     }
 
     /** @param {Segment} rawData */
@@ -73,6 +74,9 @@ class Segment {
         ctx.strokeStyle = color;
         ctx.globalAlpha = alpha;
         ctx.lineCap = cap;
+        if(this.oneWay) {
+            dash = [1, 1];
+        }
         ctx.setLineDash(dash);
         ctx.moveTo(this.p1.x, this.p1.y);
         ctx.lineTo(this.p2.x, this.p2.y);
